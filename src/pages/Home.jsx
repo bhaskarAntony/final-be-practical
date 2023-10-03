@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react'
 import HomeHero from '../components/HomeHero'
 import Training from '../components/Training'
 import DialogModel from '../components/DialogModel'
+import Webinar from '../components/Webinar';
+import ChatWithus from '../components/ChatWithus';
+import Companies from '../components/Companies';
+import YoutubeVideos from '../components/YoutubeVideos'
 
 function Home() {
       // Model open logic
@@ -21,6 +25,10 @@ function Home() {
          <DialogModel show={showModal} handleClose={handleCloseModal} />
         <HomeHero/>
         <Training/>
+        <Companies/>
+        <Webinar/>
+        <ChatWithus/>
+        <YoutubeVideos/>
     </section>
   )
 }

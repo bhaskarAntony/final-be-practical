@@ -12,6 +12,10 @@
   --green-light-color: rgb(45 248 197/1)!important;
   --green-main-color: rgb(1, 128, 96)!important;
   --yellow-color:rgb(255 213 0/1);
+  --dark-green: rgb(0 66 70/1)!important;
+}
+.light-green-text{
+  color: var(--green-light-color) !important;
 }
 .text-main{
   color:var(--yellow-color)
@@ -36,7 +40,13 @@
     color: #6b6b6b;
 }
 .banner-heading{
-    font-size:1.5rem;
+    color: var(--text-black);
+    font-size: 2rem;
+    line-height: 1.375!important;
+    font-weight: 600!important;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize !important;
 }
 .p-dark-small{
   color: var(--text-black);

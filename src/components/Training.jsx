@@ -30,8 +30,8 @@ function Training() {
         AOS.init(); // Initialize AOS
       }, []);
     return (
-        <div className='container-fluid p-3'>
-            <h3 className="banner-heading" data-aos="fade-up">Mode Of Training</h3>
+        <div className='container-fluid p-3 py-5'>
+            <h3 className="banner-heading" data-aos="fade-up">Mode Of  <br />Training</h3>
             <div className="training-cards-container container p-3">
                 <div className="row">
                     {training.map((item, index) => (
@@ -54,6 +54,9 @@ function Training() {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className="p-4 text-center">
+            <button className="btn-main">Book Your Free Trail, Now</button>
             </div>
         </div>
     );

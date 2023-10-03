@@ -1,0 +1,10 @@
+.highlight{
+    border-radius: 20px;
+    background-color: var(--light-color);
+    margin-top: 20px;
+}
+
+.highlight-card{
+    padding: 10px;
+    text-align: center;
+}

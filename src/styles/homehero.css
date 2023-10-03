@@ -1,0 +1,25 @@
+
+.hero{
+    padding: 10px;
+    min-height: 100vh;
+    background-color: var(--green-main-color);
+
+}
+.hero-text{
+    padding: 10px;
+}
+.register-container-home{
+    border-radius: 60px 0 60px 0;
+}
+@media (max-width:1100){
+    .hero-text{
+        padding: 10px !important;
+        text-align: center;
+    }
+}
+@media (max-width:768){
+    .hero-text{
+        padding: 10px !important;
+        text-align: center;
+    }
+}

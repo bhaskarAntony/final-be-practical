@@ -10,22 +10,22 @@ const home = [
     {
       heading: "High Paid Salaries & Continuous Career Growth",
       subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-      image: "https://www.pngmart.com/files/7/Web-Design-Transparent-Images-PNG.png",
+      image: "https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png",
     },
     {
       heading: "High Paid Salaries & Continuous Career Growth",
       subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-      image: "https://www.pngmart.com/files/7/Web-Design-PNG-Transparent.png",
+      image: "https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png",
     },
     {
       heading: "High Paid Salaries & Continuous Career Growth",
       subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-      image: "https://www.pngmart.com/files/7/Web-Design-PNG-Transparent.png",
+      image: "https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png",
     },
     {
       heading: "High Paid Salaries & Continuous Career Growth",
       subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-      image: "https://www.transparentpng.com/thumb/web-design/web-design-cut-out-png-12.png",
+      image: "https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png",
     }
 ]
 function HomeHero() {

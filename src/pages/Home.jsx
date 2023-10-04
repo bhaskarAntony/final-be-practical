@@ -6,6 +6,12 @@ import Webinar from '../components/Webinar';
 import ChatWithus from '../components/ChatWithus';
 import Companies from '../components/Companies';
 import YoutubeVideos from '../components/YoutubeVideos'
+import Certificate from '../components/Certificate';
+import Feedback from '../components/Feedback';
+import Adwantages from '../components/Adwantages';
+import Skills from '../components/Skills';
+import StudentsPlaced from '../components/StudentsPlaced';
+import Courses from '../components/Courses';
 
 function Home() {
       // Model open logic
@@ -24,11 +30,17 @@ function Home() {
     <section className='home'>
          <DialogModel show={showModal} handleClose={handleCloseModal} />
         <HomeHero/>
+        <Courses/>
         <Training/>
         <Companies/>
         <Webinar/>
-        <ChatWithus/>
+        <Adwantages/>
+        <Skills/>
         <YoutubeVideos/>
+        <Certificate/>
+        <ChatWithus/>
+        <StudentsPlaced/>
+        <Feedback/>
     </section>
   )
 }

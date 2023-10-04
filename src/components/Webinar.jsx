@@ -121,7 +121,7 @@ function Webinar() {
   return (
   <>
           <h3 className="banner-heading" data-aos="fade-up">PRE-CAREER <br /> GUIDENCE PROGRAM FROM <span className="main-text" > <br /> FROM TOP MNC'S</span></h3>
-    <section className='bg-light p-2' id="webinar">
+    <section className='bg-light p-2 container-fluid' id="webinar">
 
       <div className="students-placed">
       <Carousel
@@ -132,12 +132,12 @@ function Webinar() {
           onMouseEnter={handleCarouselHover}
           onMouseLeave={handleCarouselLeave}
         >
-          <div className="d-flex flex-wrap  p-3 container-fluid">
+          <div className="d-flex flex-wrap container-fluid">
           <div className="row w-100">
 
             {slideItems.map((item) => (
                 <div className="col-12 col-md-6 col-lg-4">
-              <div className="webinar-card" data-aos="zoom-in-left">
+              <div className="webinar-card bg-v5-green-700" data-aos="zoom-in-left">
                 <div className="webinar-card-header p-2">
                         <img src={item.image} alt="" />
                 </div>
@@ -160,9 +160,9 @@ function Webinar() {
     <div className="custom-indicators">
         </div>
       </div>
-      <div className="text-center py-3">
-        <button className="btn-main-outline-dark m-1">join For free Demo Classes</button>
-        <button className="btn-main m-1">join For free Demo Classes</button>
+      <div className="text-center py-5">
+        <button className="btn-main-outline-light m-1">join For free Demo Classes <i class="bi bi-chevron-double-right"></i></button>
+        <button className="btn-main m-1">join For free Demo Classes <i class="bi bi-chevron-double-right"></i></button>
       </div>
     </section>
   </>

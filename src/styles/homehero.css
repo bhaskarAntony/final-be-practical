@@ -2,7 +2,7 @@
 .hero{
     padding: 10px;
     min-height: 100vh;
-    background-color: var(--green-main-color);
+    background-color: var(--hero-dark-green);
 
 }
 .hero-text{

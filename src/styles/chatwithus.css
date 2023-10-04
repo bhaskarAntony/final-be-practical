@@ -1,7 +1,7 @@
 .chat-with-us{
-    background-color: var(--green-light-color);
+    background-color: var(--light-color);
     border-radius: 20px;
 }
 .chat-with-us img{
-  
+    width: 100%;
 }

@@ -1,9 +1,9 @@
 
 .training-card{
     padding: 10px;
-    box-shadow: var( --green-shadow);
+    /* box-shadow: var( --green-shadow); */
     min-height: 360px;
-    background-color: var(--green-light-color);
+    background-color: var(--light-color);
     border-radius: 20px;
 }
 .training-card .header{

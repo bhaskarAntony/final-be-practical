@@ -79,8 +79,8 @@ function Header() {
           </ul>
         </li>
       </ul>
-      <button class="btn-main-outline-dark mx-1 p-2 px-3" type="button">Sign Up<i class="bi bi-arrow-right"></i></button>
-        <button class="btn-main mx-1 p-2 px-3" type="button">Book Your Demo Classes Now<i class="bi bi-arrow-right"></i></button>
+      <button class="btn-main-outline-light mx-1 p-2 px-3" type="button">Sign Up<i class="bi bi-chevron-double-right"></i></button>
+        <button class="btn-main mx-1 p-2 px-3" type="button">Book Your Demo Classes Now <i class="bi bi-chevron-double-right"></i></button>
     </div>
   </div>
 </nav>

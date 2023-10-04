@@ -100,8 +100,8 @@ function HomeHero() {
                 </li>
               </ul>
             <div className="carousel-footer w-100">
-              <button className='btn-main-outline-light m-2 w-md-100'>Join For Free<i class="bi bi-arrow-right"></i></button>
-              <button className='btn-main m-2 w-md-100'>Book Your Free Master Classes <i class="bi bi-arrow-right"></i></button>
+              <button className='btn-main-outline-light m-2 hero-btn py-4'>Join For Free <i class="bi bi-chevron-double-right"></i></button>
+              <button className='btn-main m-2 hero-btn py-4'>Book Your Free Master Classes <i class="bi bi-chevron-double-right"></i></button>
             </div>
             <Highlight/>
             </div>

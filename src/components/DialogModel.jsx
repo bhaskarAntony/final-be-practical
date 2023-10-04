@@ -38,7 +38,7 @@ function DialogModel({ show, handleClose }) {
               <input type="text" className="form-control p-3" placeholder='Ex:- +91-000-0000-000' />
             </div>
             <div className="form-group mt-4">
-              <button className="btn-main w-100">Register Now</button>
+              <button className="btn-main w-100">Register Now <i class="bi bi-chevron-double-right"></i></button>
             </div>
             <hr />
             <p className="w-100 text-center text-white">Or</p>

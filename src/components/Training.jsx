@@ -45,8 +45,8 @@ function Training() {
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-10 col-10">
                                     <div className="card-body">
-                                    <h4 className='heading-small'>{item.heading}</h4>
-                                    <p className='p-dark-small text-black'>{item.description}</p>
+                                    <h4 className='card-heading'>{item.heading}</h4>
+                                    <p className='p-light-small'>{item.description}</p>
                                     </div>
                                     </div>
                                 </div>
@@ -55,8 +55,8 @@ function Training() {
                     ))}
                 </div>
             </div>
-            <div className="p-4 text-center">
-            <button className="btn-main">Book Your Free Trail, Now</button>
+            <div className="p-4 text-center py-5">
+            <button className="btn-main">Book Your Free Trail, Now <i class="bi bi-chevron-double-right"></i></button>
             </div>
         </div>
     );

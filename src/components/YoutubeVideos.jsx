@@ -169,7 +169,7 @@ function StudentsPlaced() {
     );
   }
   return (
-    <section className=' p-2 youtube-container' id="placed">
+    <section className=' p-2 py-5 youtube-container' id="placed">
         <h3 className="banner-heading" data-aos="fade-up">What our students says <br /> about institute</h3>
         <p className=" text-center p-light-small " data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">
@@ -224,8 +224,8 @@ function StudentsPlaced() {
       ))}
     </Carousel>
       </div>
-      <div className="text-center py-3">
-        <button className="btn-main">Enroll This Course</button>
+      <div className="text-center py-5">
+        <button className="btn-main">Enroll This Course <i class="bi bi-chevron-double-right"></i></button>
       </div>
     </section>
   )

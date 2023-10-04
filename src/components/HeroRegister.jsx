@@ -44,7 +44,7 @@ function HeroRegister() {
           </div>
         </div>
         <div className="col-12 col-sm-12 col-md-2 col-lg-2">
-          <button className='btn-main w-100'>Register</button>
+          <button className='btn-main w-100'>Register <i class="bi bi-chevron-double-right"></i></button>
         </div>
       </div>
       </div>

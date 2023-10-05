@@ -5,27 +5,32 @@ import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS CSS
 import Highlight from './Highlight';
 import HeroRegister from './HeroRegister';
+import codingimg from '../images/coding-img.svg'
+import portfolio from '../images/portfolio.svg'
+import resume from '../images/resume.svg'
+import student2 from '../images/student2-img.svg'
+
 
 const home = [
     {
       heading: "High Paid Salaries & Continuous Career Growth",
       subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-      image: "https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png",
+      image: codingimg,
     },
     {
       heading: "High Paid Salaries & Continuous Career Growth",
       subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-      image: "https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png",
+      image: portfolio,
     },
     {
       heading: "High Paid Salaries & Continuous Career Growth",
       subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-      image: "https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png",
+      image: resume,
     },
     {
       heading: "High Paid Salaries & Continuous Career Growth",
       subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-      image: "https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png",
+      image: student2,
     }
 ]
 function HomeHero() {
@@ -72,7 +77,7 @@ function HomeHero() {
         };
       }, [paused]);
     
-      const numberOfSlides = 3;
+      const numberOfSlides = home.length;
   return (
     <section className='hero container-fluid'>
                 <div className="custom-carousel">

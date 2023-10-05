@@ -35,15 +35,15 @@
     color:#f1c21a;
   }
   .dropend .dropdown-toggle {
-    color:var(--green-light-color);
+    color:var(--dark-green);
     margin: 0 !important;
   }
   .dropdown-item{
     padding: 15px !important;
   }
   .dropdown-item:hover {
-    background-color: var(--green-light-color)!important;
-    color: var(--white-color) !important;
+    background-color: var(--dark-green)!important;
+    color: #fff !important;
   }
   .dropdown .dropdown-menu {
     display: none;

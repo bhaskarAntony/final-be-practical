@@ -121,7 +121,7 @@ function Webinar() {
   return (
   <>
           <h3 className="banner-heading" data-aos="fade-up">PRE-CAREER <br /> GUIDENCE PROGRAM FROM <span className="main-text" > <br /> FROM TOP MNC'S</span></h3>
-    <section className='bg-light p-2 container-fluid' id="webinar">
+    <section className='p-2 container py-5' id="webinar">
 
       <div className="students-placed">
       <Carousel

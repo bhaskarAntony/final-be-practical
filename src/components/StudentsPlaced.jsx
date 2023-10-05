@@ -39,25 +39,8 @@ const students = [
     company:"https://www.speridian.com/wp-content/uploads/2019/03/logo.png",
     role:"Fullstack devoloper",
     description:"Be practical is the best Institute of training and placement, I came from civil background, so i need to get job IT field, initially I struggled to get job in IT, then one of my friend suggested me to go Be practical, so i joined with Be practical. I got good technical skills of core java and placed in young minds technology so thanks to Be practical."
-   },
-   {
-    id:1,
-    profile:"https://pbs.twimg.com/profile_images/606196213369720832/lSvWN_q-_400x400.jpg",
-    name:"Jabob",
-    started:"Fresher (Bsc Cs)",
-    company:"https://www.speridian.com/wp-content/uploads/2019/03/logo.png",
-    role:"Fullstack devoloper",
-    description:"Be practical is the best Institute of training and placement, I came from civil background, so i need to get job IT field, initially I struggled to get job in IT, then one of my friend suggested me to go Be practical, so i joined with Be practical. I got good technical skills of core java and placed in young minds technology so thanks to Be practical."
-   },
-   {
-    id:1,
-    profile:"https://pbs.twimg.com/profile_images/606196213369720832/lSvWN_q-_400x400.jpg",
-    name:"Jabob",
-    started:"Fresher (Bsc Cs)",
-    company:"https://www.speridian.com/wp-content/uploads/2019/03/logo.png",
-    role:"Fullstack devoloper",
-    description:"Be practical is the best Institute of training and placement, I came from civil background, so i need to get job IT field, initially I struggled to get job in IT, then one of my friend suggested me to go Be practical, so i joined with Be practical. I got good technical skills of core java and placed in young minds technology so thanks to Be practical."
    }
+
   ];
 function StudentsPlaced() {
     
@@ -143,8 +126,8 @@ function StudentsPlaced() {
   }
   return (
     <section className='bg-light p-2' id="placed">
-        <h3 className="banner-heading" data-aos="fade-up">Transforming careers with Our 100% Job Guarntee Program</h3>
-        <p className="banner-subtitle text-secondary px-5" data-aos="fade-up">We don’t just give certification but outcomes!</p>
+        <h3 className="banner-heading" data-aos="fade-up">Transforming careers with <br /> Our 100% Job Guarntee Program</h3>
+        <p className="banner-subtitle text-secondary px-5 text-center" data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">
       <Carousel 
       interval={carouselInterval}

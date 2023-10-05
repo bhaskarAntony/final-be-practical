@@ -81,14 +81,14 @@ var card = [
         mode:"Online And Offline"
     }
 ]
-function Mern() {
+function DigitalMarketing() {
   return (
     <section>
     <div className="course-hero container-fluid py-3">
         <div className="row">
             <div className="col-12 col-md-6 col-lg-6">
                 <div className="course-hero-text p-lg-5 p-md-2 p-2">
-                    <h1 className="heading text-white">Certificate & Placements in  Mern FullStack Devolopment</h1>
+                    <h1 className="heading text-white">Certificate & Placements in Digital Marketing</h1>
                     <p className="heading-subtitle text-white">Learn with Real Work-Ex. Join the best product-based <br /> companies with <span className='text-green fw-bold'>guaranteed placement.</span></p>
                     <div className="batch  d-flex align-items-center"> 
                         <i class="bi bi-calendar3 fs-4 text-green"></i>
@@ -167,4 +167,4 @@ function Mern() {
   )
 }
 
-export default Mern
+export default DigitalMarketing

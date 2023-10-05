@@ -56,43 +56,74 @@ function AllCourses() {
         AOS.init(); // Initialize AOS
       }, []);
     return (
-        <div className='container'>
-        <div className="row flex-wrap d-flex justify-content-center align-items-center">
-            {courses.map((item, index) => (
-                 <div className="col-12 col-md-6 col-lg-6">
-                  <div className="course-card">
-                    <div className="course-card-header">
-                      <div className="course-icon">
-                        <img src={item.icon} alt="" className='w-100 fluid-img' />
+      <div className='container'>
+      <div className="row flex-wrap d-flex justify-content-center align-items-center">
+          {courses.map((item, index) => (
+                <div className="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 d-flex justify-content-center">
+                <div className="card course-card" data-aos="zoom-in">
+                  <div className="row">
+                      <div className="col-12 cl-md-5 col-lg-4">
+                      <div className={`course-card-header p-2 d-flex align-items-end justify-content-between course-card-header${item.id}`}>
+                      <div className="icon">
+                  <img src={item.icon} alt="" className='w-100 img-fluid' />
+                </div>
+                </div>
+
                       </div>
-                    </div>
-                    <div className="course-card-body">
-                      <ul className="list-group">
-                        <li className="list-group-item">
-                          <h4 className="heading-small text-light-green">{item.name}</h4>
-                        </li>
-                        <li className="list-group-item">
-                        <p className="p-dark-large1 text-light-green"><i class="bi bi-person-fill fs-4"></i> Trainer</p>
-                          <p className="p-dark-small text-white">{item.trainer}</p>
-                        </li>
-                        <li className="list-group-item">
-                        <p className="p-dark-large1 text-light-green"> <i class="bi bi-alarm fs-4"></i> Duration</p>
-                          <p className="p-dark-small text-white">{item.duration}</p>
-                        </li>
-                        <li className="list-group-item">
-                          <p className="p-dark-large1 text-light-green"><i class="bi bi-camera-video-fill fs-4"></i> Training Mode</p>
-                          <p className="p-dark-small text-white">Online and Offline</p>
-                        </li>
-                      <button className="btn-main-outline-light w-100 mb-2">Learn More <i class="bi bi-chevron-double-right"></i></button>
-                      <button className="btn-main w-100 mb-2">Enroll This Course <i class="bi bi-chevron-double-right"></i></button>
-                      </ul>
-                    </div>
+                      <div className="col-12 col-md-7 col-lg-8">
+               <div className="course-card-body p-2">
+                  <h4 className='light-green-text card-heading'>{item.name}</h4>
+                  <hr />
+                  <div className="row">
+                  <div className="col-6 p-2 text-center d-flex align-items-center">
+                      <i class="bi bi-clock  mx-2 fs-4"></i>
+                      <p>{item.duration}</p>
+                      </div>
+                      <div className="col-6 p-2 text-center d-flex align-items-center">
+                      <i class="bi bi-camera-video  mx-2 fs-4"></i>
+                      <p>Online and offline classes</p>
+                      </div>
+                      <div className="col-6 p-2 text-center d-flex align-items-center">
+                      <i class="bi bi-mortarboard  mx-2 fs-4"></i>
+                      <p>Job Assurance</p>
+                      </div>
+                      <div className="col-6 p-2 text-center d-flex align-items-center">
+                      <i class="bi bi-person-lines-fill mx-2 fs-4"></i>
+                      <p>HR activities</p>
+                      </div>
                   </div>
-                 </div>
-            ))}
-          
-        </div>
-    </div>
+                  
+                  {/* <p><small>{item.trainer}</small></p> */}
+                  <div className="course-footer p-2 m-0">
+                
+                <div className="carousel-footer">
+                <button className="btn-main-outline-light w-100 mb-2">Learn More</button>
+                 <button className="btn-main w-100">enroll Now</button>
+                </div>
+                
+               </div>
+                </div>
+
+               </div>
+                  </div>
+               
+              
+                {/* <div className="thumb-layout">
+                  <img src={item.icon} alt="" />
+                  <h4>Enroll Now This {item.name}</h4>
+                  <p>Build Your Careere With {item.name}</p>
+
+                <div className="thumb-btns">
+                  <button className="enroll-btn">Enroll</button>
+                  <button className="enquire-btn">Enquire</button>
+                </div>
+                </div> */}
+                </div>
+            </div>
+          ))}
+        
+      </div>
+  </div>
     )
 }
 

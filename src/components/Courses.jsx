@@ -13,14 +13,14 @@ function Courses() {
   return (
     <section>
         <h3 className="banner-heading" data-aos="fade-up">Your Choice, Our Course</h3>
-        <div className="container-fluid">
-      <Tabs>
+        <div className="container">
+      <Tabs className="courses-container">
     <TabList className="custom-tabs">
       <Tab className="custom-tab">Trending Courses</Tab>
       <Tab className="custom-tab">Our Courses</Tab>
     </TabList>
 
-    <TabPanel className="courses-container py-3">
+    <TabPanel className=" py-3">
     <TrendingCourses/>
     </TabPanel>
     <TabPanel className="py-3">

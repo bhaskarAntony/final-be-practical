@@ -1,7 +1,7 @@
 
 #webinar{
   position: relative;
-  background: var(--dark-green) !important;
+  background: var(--bg-v5-green) !important;
   border-radius: 30px;
 
 }
@@ -15,7 +15,7 @@
 }
 .webinar-card-header img{
     width: 100%;
-    height: 250px;
+    height: 200px;
     border-radius: 20px;
 }
 .webinar-heading .webinar-heading-left, .webinar-heading-right{

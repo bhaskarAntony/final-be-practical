@@ -57,7 +57,7 @@ function TrendingCourses() {
   //   AOS.init(); // Initialize AOS
   // }, []);
     return (
-      <div className='container'>
+      <div className='container p-0'>
       <div className="row flex-wrap d-flex justify-content-center align-items-center">
           {courses.map((item, index) => (
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 d-flex justify-content-center">

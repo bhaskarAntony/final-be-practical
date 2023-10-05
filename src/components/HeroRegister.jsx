@@ -12,12 +12,12 @@ function HeroRegister() {
         <div className="col-12 col-sm-12 col-md-5 col-lg-5">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-              <div className="form-group">
+              <div className="form-group mb-2">
                 <input type="text" placeholder='Name' className='form-control p-3' />
               </div>
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-            <div className="form-group">
+            <div className="form-group mb-2">
               <input type="email" placeholder='Email' className='form-control p-3' />
              </div> 
             </div>
@@ -26,12 +26,12 @@ function HeroRegister() {
         <div className="col-12 col-sm-12 col-md-5 col-lg-5">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-             <div className="form-group">
+             <div className="form-group mb-2">
               <input type="number" placeholder='Phone' className='form-control p-3' />
              </div>
             </div>
             <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-             <div className="form-group form-group-last">
+             <div className="form-group form-group-last mb-2">
               <select className='form-control p-3'>
                 <option value="mern">MERN</option>
                 <option value="mern">Python Fullstack</option>
@@ -43,7 +43,7 @@ function HeroRegister() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-12 col-md-2 col-lg-2">
+        <div className="col-12 col-sm-12 col-md-2 col-lg-2 mb-2">
           <button className='btn-main w-100'>Register <i class="bi bi-chevron-double-right"></i></button>
         </div>
       </div>

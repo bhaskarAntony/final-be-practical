@@ -134,6 +134,8 @@ function Mern() {
             </div>
             <div className="col-12 col-md-6 col-lg-6">
                 <div className="course-hero-video">
+    <div className="right-blur"></div>
+
                 <div className="video-container">
                         <img src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         <div className="play-icon">

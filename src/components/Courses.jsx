@@ -13,8 +13,8 @@ function Courses() {
   return (
     <section>
         <h3 className="banner-heading" data-aos="fade-up">Your Choice, Our Course</h3>
-        <div className="container">
-      <Tabs className="courses-container">
+        <div className="container-md container-lg p-1">
+      <Tabs className="courses-container py-3 p-lg-3 p-1 p-md-2">
     <TabList className="custom-tabs">
       <Tab className="custom-tab">Trending Courses</Tab>
       <Tab className="custom-tab">Our Courses</Tab>

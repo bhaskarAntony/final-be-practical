@@ -170,8 +170,8 @@ function StudentsPlaced() {
     </Carousel>
       </div>
       <div className="text-center py-5">
-      <button className="btn-main-outline-dark mx-2" data-aos="fade-up">Explore Courses <i class="bi bi-chevron-double-right"></i></button>
-        <button className="btn-main mx-2" data-aos="fade-up">Book Free Demo Classes <i class="bi bi-chevron-double-right"></i></button>
+      <button className="btn-main-outline-dark mx-2 mb-2" data-aos="fade-up">Explore Courses <i class="bi bi-chevron-double-right"></i></button>
+        <button className="btn-main mx-2 mb-1" data-aos="fade-up">Book Free Demo Classes <i class="bi bi-chevron-double-right"></i></button>
       </div>
     </section>
   )

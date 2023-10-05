@@ -16,6 +16,7 @@ import Events from './components/Events'
 import Blogs from './components/Blogs'
 import ContactPage from './components/ContactPage'
 import About from './components/About'
+import ElitePage from './pages/ElitePage'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path='/blogs' element={<Blogs/>}/>
         <Route path='/contacts' element={<ContactPage/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/elite' element={<ElitePage/>}/>
         </Routes>
         </BrowserRouter>
       <Footer/>

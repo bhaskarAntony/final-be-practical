@@ -72,7 +72,7 @@
         height: 80px;
         width: 80px;
         border-radius: 100%;
-        border: 3px solid var(--main-color);
+        border: 3px solid var(--green-light-color);
         padding: 3px;
     }
     .skillsmain{
@@ -127,22 +127,7 @@
         font-size: 1rem;
     }
 }
-/* @media (max-width:768px){
-    .skillsmain{
-        padding: 0;
-        min-height: fit-content;
-    }
-    .video{
-        min-height: 100%;
-    }
-    .video-status{
-        gap: 0;
-    }
-    .skillsmain .right{
-        padding: 10px;
-        height: fit-content;
-    }
-} */
+
 .play-video:hover{
     transform: scale(1.1);
     transition: 1s all;

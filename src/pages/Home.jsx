@@ -27,7 +27,7 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className='home'>
+    <section className='home p-0 overflow-hidden'>
          <DialogModel show={showModal} handleClose={handleCloseModal} />
         <HomeHero/>
         <Courses/>

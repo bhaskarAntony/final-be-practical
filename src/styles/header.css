@@ -97,17 +97,15 @@
       z-index: 10;
     }
     .navbar-nav .nav-link{
-      color: var(--white-color);
+      color: #fff;
     }
     .navbar-nav .nav-link:hover{
       color: #d4d3d3 !important;
     }
     .dropdown-toggle{
-      color: var(--main-color) !important;
+      color: #fff !important;
     }
-    .nav-apply-btn{
-      border: 1px solid var(--white-color) !important;
-      color: var(--white-color);
-      min-width: 100%;
+    nav button{
+      margin-bottom: 10px !important;
     }
   }

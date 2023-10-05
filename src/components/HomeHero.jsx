@@ -79,7 +79,7 @@ function HomeHero() {
     
       const numberOfSlides = home.length;
   return (
-    <section className='hero container-fluid'>
+    <section className='hero container-fluid p-1 py-2'>
                 <div className="custom-carousel">
           <Carousel activeIndex={index} onSelect={handleSelect}>
           {
@@ -88,9 +88,10 @@ function HomeHero() {
       <div className="row">
         <div className="col-12 col-sm-12 col-md-12 col-lg-7">
             <div className="hero-text p-lg-5 p-md-3 p-2">
+            {/* <div className="left-blur"></div> */}
               <h1 className="heading text-white">{item.heading}</h1>
               <p className="text-white heading-subtitle my-4">{item.subheading}</p>
-              <ul>
+              {/* <ul>
                 <li>
                     <p className="p-light-small text-white"><span className='fw-bold text-main'>Expert</span> expert trainers</p>
                 </li>
@@ -103,7 +104,7 @@ function HomeHero() {
                 <li>
                     <p className="p-light-small text-white"><span className='fw-bold text-main'>Industry</span> recognized certificate</p>
                 </li>
-              </ul>
+              </ul> */}
             <div className="carousel-footer w-100">
               <button className='btn-main-outline-light m-2 hero-btn py-4'>Join For Free <i class="bi bi-chevron-double-right"></i></button>
               <button className='btn-main m-2 hero-btn py-4'>Book Your Free Master Classes <i class="bi bi-chevron-double-right"></i></button>
@@ -112,7 +113,8 @@ function HomeHero() {
             </div>
         </div>
         <div className="col-12 col-sm-12 col-md-12 col-lg-5">
-        <div className="hero-image">
+        <div className="hero-image p-3">
+          <div className="right-blur"></div>
             <img src={item.image} alt="" className="w-100 img-fluid" />
         </div>
       </div>

@@ -54,8 +54,8 @@ function Adwantages() {
         AOS.init(); // Initialize AOS
       }, []);
   return (
-    <section id="adwantages" className='overflow-hidden'>
-      <div className="adwantages-container container p-lg-5 text-center">
+    <section id="adwantages" className='overflow-hidden '>
+      <div className="adwantages-container container p-lg-5 text-center bg-light rounded-4">
         <h3 className="banner-heading" data-aos="fade-up">Adwantages At <br /> Be Practical</h3>
         <p className="p-light-small text-center" data-aos="fade-up">
             Mentoring for our full stack course starts long before a teacher gives an individual training session and continues long after the training session is over. Assessment, motivation, design, delivery, and evaluation are all connected stages or activities in this job guaranteed courses in Bangalore.</p>

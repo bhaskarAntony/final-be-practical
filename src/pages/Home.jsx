@@ -15,7 +15,7 @@ import Courses from '../components/Courses';
 
 function Home() {
       // Model open logic
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   const handleCloseModal = () => setShowModal(false);
 

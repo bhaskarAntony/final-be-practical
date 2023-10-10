@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../styles/youtubevideo.css'
 import { Carousel } from 'react-bootstrap';
 import AOS from 'aos';
+import YoutubeVideosModal from '../Modals/VideosModal';
 
   const youtubevideos = [
     {
@@ -175,6 +176,8 @@ function StudentsPlaced() {
       <div className="students-placed">
       <Carousel
        interval={carouselInterval}
+       onMouseEnter={handleCarouselHover}
+       onMouseLeave={handleCarouselLeave}
        >
       {carouselItems.map((slideItems, index) => (
         <Carousel.Item key={index} 
@@ -189,9 +192,9 @@ function StudentsPlaced() {
             <div className="youtube-card">
             <div className="youtube-header">
                           <a
-                            href={item.youtubevedUrl}
+                          
                             target="_blank"
-                            rel="noopener noreferrer"
+                            rel="noopener noreferrer"  
                           >
                             <img
                               src={getThumbnailUrl(
@@ -201,7 +204,7 @@ function StudentsPlaced() {
                               className="w-100 h-100"/>
                           </a>
                               <div className="youtube-play-btn">
-                             <a href={item.youtubevedUrl}>
+                             <a >
                                <div className="play-icon">
                               <i class="bi bi-play-fill fs-4"></i>
                               </div>

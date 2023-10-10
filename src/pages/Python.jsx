@@ -95,8 +95,8 @@ function Python() {
                             <p className='p-dark-small text-green mx-2 mt-2'>New Batch Starts At 20 Sept 2023</p>
                         </div>
                         <div className="course-btn mt-5">
-                            <button className="btn-main-outline-light p-4 hero-btn">Enroll This Course</button>
-                            <button className="btn-main p-4 mx-2 hero-btn">Book Free Demo Classes</button>
+                            <button className="btn-main-outline-light p-4 hero-btn">Enroll This Course <i class="bi bi-chevron-double-right"></i></button>
+                            <button className="btn-main p-4 mx-2 hero-btn">Book Free Demo Classes <i class="bi bi-chevron-double-right"></i></button>
                         </div>
                         <div className="course-highlight mt-5">
                             <div className="row">

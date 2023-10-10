@@ -5,15 +5,23 @@ import hackethon from '../images/hackethon.mp4'
 import video1 from '../images/vedio1.mp4'
 import video2 from '../images/video2.mp4'
 import video3 from '../images/video3.mp4'
+import VideosModal from '../Modals/VideosModal';
 
 function Skills() {
   const [isPlay, setIsPlay] = useState(false);
   const [playVideoUrl, setPlayVideoUrl] = useState(skillVideo);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const handleVideoClick = (videoSrc) => {
     setIsPlay(true);
     setPlayVideoUrl(videoSrc);
   };
+  const closeModal = () => {
+    setIsPlay(false);
+    setPlayVideoUrl('');
+    setModalOpen(false); // Close the modal
+  };
+
 
   return (
     <section className=' skillsmain overflow-hidden'>
@@ -36,7 +44,7 @@ function Skills() {
                   <div className="row video-status d-flex g-2">
                     <div className="col-3 col-sm-6 col-md-6 col-lg-3 mb-2">
                       <div className="video">
-                        <video src={hackethon} autoPlay muted loop onClick={() => handleVideoClick(hackethon)}></video>
+                        <video src={hackethon} autoPlay muted loop onClick={() => handleVideoClick(hackethon) }></video>
                         
                       </div>
                     </div>
@@ -68,6 +76,7 @@ function Skills() {
       <div className="text-center py-5">
         <button className="btn-main">Explore Courses <i class="bi bi-chevron-double-right"></i></button>
       </div>
+      <VideosModal isOpen={modalOpen} videoSrc={playVideoUrl} onClose={closeModal} />
     </section>
   );
 }

@@ -42,7 +42,7 @@ const ScrollToTopButton = () => {
       className={`scroll-to-top ${isVisible ? 'visible' : ''} btn-main`}
       onClick={scrollToTop}
     >
-     Apply Now
+     Apply Now <i class="bi bi-chevron-double-right"></i>
     </button>
    </div>
   );

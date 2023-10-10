@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
 import Header from './components/Header'
@@ -22,8 +22,32 @@ import BookDemo from './components/BookDemo'
 import ScrollToTopButton from './components/ScrollToTopButton'
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 import { useRef } from 'react'
+import SimpleRegister from './components/SimpleRegister'
 
 function App() {
+
+  const [showRegistrationModal, setShowRegistrationModal] = useState(true);
+
+  const openRegistrationModal = () => {
+    setShowRegistrationModal(true);
+  };
+
+  const closeRegistrationModal = () => {
+    setShowRegistrationModal(false);
+  };
+
+  useEffect(() => {
+    // Function to open the registration modal
+    const openModal = () => {
+      openRegistrationModal();
+    };
+
+    // Open the modal every 2 minutes
+    const intervalId = setInterval(openModal, 120000); // 120,000 milliseconds = 2 minutes
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   const tawkMessengerRef = useRef();
 
 const handleMinimize = () => {
@@ -34,6 +58,7 @@ const onLoad = () => {
 };
   return (
     <div>
+           <SimpleRegister show={showRegistrationModal} onClose={closeRegistrationModal} />
        <TawkMessengerReact
                 propertyId="https://tawk.to/chat/6524d9286fcfe87d54b8416a/1hcbv0iqn"
                 widgetId="default"

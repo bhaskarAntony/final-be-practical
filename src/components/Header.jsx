@@ -9,16 +9,11 @@ function Header() {
       </div>
       <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-  <div className='d-flex align-items-center justify-content-between w-md-100'>
- <div className='d-flex'>
- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="bi bi-list"></i>
-    </button>
   <a class="navbar-brand" href="/"> <img src="https://be-practical.com/images/Be-logo.png" alt="" /></a>
- </div>
-  <a class="nav-link  elite-link d-lg-none" href='/elite' > <i class="bi bi-stars"></i></a>
-  </div>
 
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="bi bi-list text-white"></i>
+    </button>
 
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-group  d-flex justify-content-center w-100">

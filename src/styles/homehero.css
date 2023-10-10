@@ -50,10 +50,7 @@
         text-align: center;
     }
 }
-@media (max-width:768){
-    .hero{
-        min-height: fit-content;
-    }
+@media (max-width:768px){
     .hero-text{
         padding: 10px !important;
         text-align: center;

@@ -19,6 +19,7 @@ import About from './components/About'
 import ElitePage from './pages/ElitePage'
 import RegistrationPage from './components/RegistrationPage'
 import BookDemo from './components/BookDemo'
+import ScrollToTopButton from './components/ScrollToTopButton'
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 import { useRef } from 'react'
 
@@ -59,6 +60,7 @@ const onLoad = () => {
         <Route path='/book-demo' element={<BookDemo/>}/>
         </Routes>
         </BrowserRouter>
+        <ScrollToTopButton/>
       <Footer/>
     </div>
   )

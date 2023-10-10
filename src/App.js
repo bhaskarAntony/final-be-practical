@@ -23,6 +23,8 @@ import ScrollToTopButton from './components/ScrollToTopButton'
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 import { useRef } from 'react'
 import SimpleRegister from './components/SimpleRegister'
+import ScrollProgressBar from './Extra/ScrollProgressbar'
+import Progressbar from './Extra/Progressbar'
 
 function App() {
 
@@ -65,6 +67,8 @@ const onLoad = () => {
                 onLoad={onLoad}
                 />
       <Header/>
+      <ScrollProgressBar/>
+      <Progressbar/>
         <BrowserRouter>
         <Routes>
         <Route path='/' element={<Home/>}/>

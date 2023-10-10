@@ -18,6 +18,10 @@
     justify-content: center;
     border-radius: 30px;
 }
+.course-card-header img{
+max-width: 150px;
+max-height: 150px;
+}
 
 .course-card-header .course-icon{
     width: 80px;
@@ -34,4 +38,9 @@
     padding: 10px;
     border-radius: 10px;
 
+}
+@media (max-width:998px){
+    .course-card{
+    max-width: 400px;
+    }
 }

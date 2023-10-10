@@ -60,10 +60,10 @@ function TrendingCourses() {
       <div className='container p-0'>
       <div className="row flex-wrap d-flex justify-content-center align-items-center">
           {courses.map((item, index) => (
-                <div className="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 d-flex justify-content-center">
+                <div className="col-12 col-sm-6 col-md-12 col-lg-6 mb-3 d-flex justify-content-center">
                 <div className="card course-card" data-aos="zoom-in">
                   <div className="row">
-                      <div className="col-12 cl-md-5 col-lg-4">
+                      <div className="col-12 cl-md-12 col-lg-4">
                       <div className={`course-card-header p-2 d-flex align-items-end justify-content-between course-card-header${item.id}`}>
                       <div className="icon">
                   <img src={item.icon} alt="" className='w-100 img-fluid' />
@@ -71,7 +71,7 @@ function TrendingCourses() {
                 </div>
 
                       </div>
-                      <div className="col-12 col-md-7 col-lg-8">
+                      <div className="col-12 col-md-12 col-lg-8">
                <div className="course-card-body p-2">
                   <h4 className='card-heading text-900'>{item.name}</h4>
                   <hr />

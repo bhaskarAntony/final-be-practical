@@ -42,8 +42,8 @@
     padding: 15px !important;
   }
   .dropdown-item:hover {
-    background-color: var(--dark-green)!important;
-    color: #fff !important;
+    background-color: var(--yellow-color)!important;
+    color: #000000 !important;
   }
   .dropdown .dropdown-menu {
     display: none;

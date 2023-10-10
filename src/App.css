@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Barcode+39+Extended+Text&family=Libre+Franklin&family=Noto+Sans:wght@300&family=Nunito:wght@500&family=Poppins:wght@400;500;800&family=Press+Start+2P&family=Rubik&family=Tilt+Prism&family=Wallpoet&family=Work+Sans:wght@300&display=swap');
+
+*{
+  font-family: 'Nunito', sans-serif !important;
+}
+
 :root{
-  --light-color: rgb(227, 255, 242);
+  --light-color: #d6f6ea;
   --tw-shadow-color: rgba(255,213,0,.5)!important;
   --tw-shadow-green-color: rgb(45 248 197/0.5)!important;
   --tw-shadow: var(--tw-shadow-colored)!important;
@@ -12,9 +18,9 @@
   --green-shadow: 5px 5px 15px -3px var(--tw-shadow-green-color),4px 4px 6px -4px var(--tw-shadow-green-color)!important;
   --green-light-color: rgb(45 248 197/1)!important;
   --green-main-color: #018060!important;
-  --yellow-color:rgb(255 213 0/1);
+  --yellow-color:#ffd500;
   --dark-green: rgb(2, 38, 40)!important;
-  --hero-dark-green:#013437!important;
+  --hero-dark-green:#045357!important;
   --bg-v5-green:rgb(0 66 70/1)!important;
   --gold:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
   radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
@@ -43,6 +49,7 @@
   background-color: var(--green-main-color);
 }
 
+
 .light-green-text{
   color: var(--green-light-color) !important;
 }
@@ -69,8 +76,10 @@
 }
 .card-heading{
   font-size: 1.5rem;
-  font-weight: 500;
   color: rgb(0 0 0/var(--tw-text-opacity));
+}
+.text-900{
+  font-weight: 900;
 }
 .heading-subtitle{
     font-size: 1.3rem;
@@ -111,7 +120,7 @@
     border: none;
     padding: 15px 20px;
     color: #000;
-    background-color: rgb(255 213 0/1);
+    background-color: #ffd500;
     font-size: 1.5rem;
     box-shadow: var(--btn-shadow);
     border-radius: 10px;

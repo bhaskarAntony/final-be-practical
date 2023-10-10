@@ -17,10 +17,27 @@ import Blogs from './components/Blogs'
 import ContactPage from './components/ContactPage'
 import About from './components/About'
 import ElitePage from './pages/ElitePage'
+import RegistrationPage from './components/RegistrationPage'
+import BookDemo from './components/BookDemo'
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+import { useRef } from 'react'
 
 function App() {
+  const tawkMessengerRef = useRef();
+
+const handleMinimize = () => {
+    tawkMessengerRef.current.minimize();
+};
+const onLoad = () => {
+  console.log('onLoad works!');
+};
   return (
     <div>
+       <TawkMessengerReact
+                propertyId="https://tawk.to/chat/6524d9286fcfe87d54b8416a/1hcbv0iqn"
+                widgetId="default"
+                onLoad={onLoad}
+                />
       <Header/>
         <BrowserRouter>
         <Routes>
@@ -38,6 +55,8 @@ function App() {
         <Route path='/contacts' element={<ContactPage/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/elite' element={<ElitePage/>}/>
+        <Route path='/register' element={<RegistrationPage/>}/>
+        <Route path='/book-demo' element={<BookDemo/>}/>
         </Routes>
         </BrowserRouter>
       <Footer/>

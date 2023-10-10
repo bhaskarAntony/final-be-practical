@@ -1,10 +1,10 @@
 .course-card{
-    background-color: var(--dark-green) !important;
+    /* background-color: var(--dark-green) !important; */
     border-radius: 30px !important;
     line-height: 1 !important;
     overflow: hidden;
     border: 1px solid #037c5a !important;
-    color: #fff !important;
+    /* color: #fff !important; */
     padding: 10px;
 }
 .course-card-header{
@@ -26,8 +26,12 @@
 .course-card-body{
     padding:  20px 10px;
     margin-top: 40px;
-    background-color: var(--dark-green);
+    /* background-color: var(--dark-green); */
 }
 .course-card-body [class*="bi-"]{
-    color: var(--green-light-color);
+    color: rgb(1, 85, 61);
+    background-color: #15d49e72;
+    padding: 10px;
+    border-radius: 10px;
+
 }

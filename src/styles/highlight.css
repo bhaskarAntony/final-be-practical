@@ -1,6 +1,7 @@
 .highlight{
     border-radius: 20px;
-    background-color: var(--light-color);
+    background-color: rgba(5, 255, 80, 0.2) !important;
+  border: 1px solid rgba(147, 255, 172, 0.2);
     margin-top: 20px;
 }
 

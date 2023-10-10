@@ -81,7 +81,13 @@ function HomeHero() {
   return (
     <section className='hero container-fluid p-1 py-2'>
                 <div className="custom-carousel">
-          <Carousel activeIndex={index} onSelect={handleSelect}>
+          <Carousel
+           activeIndex={index}
+           onSelect={handleSelect}
+           id="vertical-carousel"
+           onMouseEnter={handleCarouselHover}
+           onMouseLeave={handleCarouselLeave}
+          >
           {
   home.map((item, index) => (
     <Carousel.Item key={index}>
@@ -106,15 +112,15 @@ function HomeHero() {
                 </li>
               </ul> */}
             <div className="carousel-footer w-100">
-              <button className='btn-main-outline-light m-2 hero-btn py-4'>Join For Free <i class="bi bi-chevron-double-right"></i></button>
-              <button className='btn-main m-2 hero-btn py-4'>Book Your Free Master Classes <i class="bi bi-chevron-double-right"></i></button>
+              <button className='btn-main-outline-light m-2 hero-btn py-3'>Join For Free <i class="bi bi-chevron-double-right"></i></button>
+              <button className='btn-main m-2 hero-btn py-3'>Book Your Free Master Classes <i class="bi bi-chevron-double-right"></i></button>
             </div>
             <Highlight/>
             </div>
         </div>
         <div className="col-12 col-sm-12 col-md-12 col-lg-5">
         <div className="hero-image p-3">
-          <div className="right-blur"></div>
+          {/* <div className="right-blur"></div> */}
             <img src={item.image} alt="" className="w-100 img-fluid" />
         </div>
       </div>

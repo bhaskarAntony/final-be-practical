@@ -41,8 +41,8 @@ const Module = (props) => {
         </div>
       ))}
         <div className="text-center py-5">
-        <button className="btn-main-outline-light mx-2">Enquire Now <i class="bi bi-chevron-double-right"></i></button>
-        <button className="btn-main mx-2">Download Module PDF <i class="bi bi-chevron-double-right"></i></button>
+        <button className="btn-main-outline-light mx-2 mb-2">Enquire Now <i class="bi bi-chevron-double-right"></i></button>
+        <button className="btn-main mx-2 mb-2">Download Module PDF <i class="bi bi-chevron-double-right"></i></button>
     </div>
     </div>
 

@@ -20,7 +20,7 @@
     width: 60px;
     height: 60px;
     padding: 10px;
-    background-color: #ceff8a;
+    background-color: var(--yellow-color);
     border-radius: 10px;
 }
 .adwantage-header img{

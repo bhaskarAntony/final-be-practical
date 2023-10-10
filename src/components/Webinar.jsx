@@ -101,7 +101,7 @@ function Webinar() {
           <div>
             {text.slice(0, maxLength)}
             {text.length > maxLength && (
-              <p onClick={toggleTruncate} className="read-more-button text-danger">
+              <p onClick={toggleTruncate} className="read-more-button light-green-text">
                 Read More
               </p>
             )}
@@ -109,7 +109,7 @@ function Webinar() {
         ) : (
           <div>
             {text}
-            <p onClick={toggleTruncate} className="read-less-button text-danger">
+            <p onClick={toggleTruncate} className="read-less-button light-green-text">
               Read Less
             </p>
           </div>
@@ -142,12 +142,9 @@ function Webinar() {
                         <img src={item.image} alt="" />
                 </div>
                 <div className="webinar-card-body p-2">
-                    <div className="webinar-heading">
-                  <h4 className='heading-small'><span className="webinar-heading-left">ONLINE</span><span className="webinar-heading-right">WEBINAR</span></h4>
-                    </div>
-                  <p className="mt-2 p-light-small">Conducted by</p>
-                    <h3 className="heading-small">{item.company}</h3>
-                    <p className='mt-2 p-dark-small'><ReadMore text={item.description} maxLength={50} /></p>
+                  <p className="mt-2 p-light-small light-green-text">Conducted by</p>
+                    <h3 className="heading-small text-white">{item.company}</h3>
+                    <p className='mt-2 p-dark-small text-black'><ReadMore text={item.description} maxLength={50} /></p>
                 </div>
               </div>
                 </div>

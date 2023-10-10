@@ -1,6 +1,7 @@
 .course-hero{
     background-color:var(--bg-v5-green) ;
     min-height: 100vh;
+    margin-bottom: 100px;
 }
 .batch{
     padding: 10px;

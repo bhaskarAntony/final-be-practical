@@ -30,7 +30,9 @@ function Home() {
     <section className='home p-0 overflow-hidden'>
          <DialogModel show={showModal} handleClose={handleCloseModal} />
         <HomeHero/>
-        <Courses/>
+       <div className="spacer mt-5">
+       <Courses/>
+       </div>
         <Training/>
         <Companies/>
         <Webinar/>

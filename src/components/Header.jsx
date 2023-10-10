@@ -79,8 +79,12 @@ function Header() {
           </ul>
         </li>
       </ul>
-      <button class="btn-main-outline-light mx-1 p-2 px-3 hero-btn" type="button">Sign Up<i class="bi bi-chevron-double-right"></i></button>
-        <button class="btn-main mx-1 p-2 px-3 hero-btn" type="button">Book Your Demo Classes Now <i class="bi bi-chevron-double-right"></i></button>
+     <a href="/register" className='text-decoration-none'>
+     <button class="btn-main-outline-light mx-1 p-2 px-3 hero-btn" type="button">Sign Up<i class="bi bi-chevron-double-right"></i></button>
+     </a>
+      <a href="/book-demo" className='text-decoration-none'>
+      <button class="btn-main mx-1 p-2 px-3 hero-btn" type="button">Book Your Demo Classes Now <i class="bi bi-chevron-double-right"></i></button>
+      </a>
     </div>
   </div>
 </nav>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroRegister() {
   return (
-    <div className="register-container-home bg-white  container-fluid">
+    <div className="register-container-home bg-white  container">
     <div className="register align-items-center rounded-1 p-3">
       <div className="p-2 rounded-2 py-3 border-0 bg-tranparent">
         <div className="card-header-text text-center w-100">

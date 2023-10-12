@@ -120,7 +120,7 @@ function Webinar() {
 
   return (
   <>
-          <h3 className="banner-heading" data-aos="fade-up">PRE-CAREER <br /> GUIDENCE PROGRAM FROM <span className="main-text" > <br /> FROM TOP MNC'S</span></h3>
+          <h3 className="banner-heading mt-5" data-aos="fade-up">Pre Career Guidence program <span className="main-text" > <br /> From Top MNC's</span></h3>
     <section className='p-2 container py-5' id="webinar">
 
       <div className="students-placed">

@@ -51,3 +51,8 @@
 .main-lan-container{
     border-radius: 30px;
 }
+@media (max-width:768px){
+    .course-hero-video{
+        min-height: fit-content;
+    }
+}

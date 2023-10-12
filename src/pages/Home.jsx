@@ -12,6 +12,9 @@ import Adwantages from '../components/Adwantages';
 import Skills from '../components/Skills';
 import StudentsPlaced from '../components/StudentsPlaced';
 import Courses from '../components/Courses';
+import Stories from '../components/Stories';
+import QuizModal from '../components/QuizModal';
+import Batchtable from '../components/Batchtable';
 
 function Home() {
       // Model open logic
@@ -30,12 +33,15 @@ function Home() {
     <section className='home p-0 overflow-hidden'>
          <DialogModel show={showModal} handleClose={handleCloseModal} />
         <HomeHero/>
+        {/* <Stories/> */}
        <div className="spacer mt-5">
        <Courses/>
        </div>
         <Training/>
         <Companies/>
+        <Batchtable/>
         <Webinar/>
+        <QuizModal/>
         <Adwantages/>
         <Skills/>
         <YoutubeVideos/>

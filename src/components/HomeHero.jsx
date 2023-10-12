@@ -95,7 +95,7 @@ function HomeHero() {
         <div className="col-12 col-sm-12 col-md-12 col-lg-7">
             <div className="hero-text p-lg-5 p-md-3 p-2">
             {/* <div className="left-blur"></div> */}
-              <h1 className="heading text-white">{item.heading}</h1>
+              <h1 className="heading text-white text-start">{item.heading}</h1>
               <p className="text-white heading-subtitle my-4">{item.subheading}</p>
               {/* <ul>
                 <li>

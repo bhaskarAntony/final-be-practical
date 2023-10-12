@@ -26,7 +26,7 @@ const events = [
 function UpcomingEvents(props) {
   return (
     <div className='event'>
-      <h3 className="banner-heading">{props.heading}</h3>
+      <h3 className="banner-heading text-white">{props.heading}</h3>
       {props.events.map((event, index) => (
         <div className="event-card mb-5  p-lg-3 p-md-0 mb-3">
           <div className="event-blur">
@@ -39,7 +39,7 @@ function UpcomingEvents(props) {
           </div>
           <div className="col-12 col-md-12 col-lg-6">
             <div className="event-text p-3">
-              <h3 className="fw-bold">{event.title}</h3>
+              <h3 className="fw-bold text-white">{event.title}</h3>
               <h5 className='keyword'>{event.keyword}</h5>
               <h4 className="mt-3 text-success">What you will Learn</h4>
               <p className='text-light'>{event.description}</p>
@@ -49,10 +49,10 @@ function UpcomingEvents(props) {
                 {
                  event.bookticket? 
                  <>
-                <button className="join-btn p-2 w-md-100">Book Free Ticket</button>
+                <button className="btn-main p-2 w-md-100">Book Free Ticket</button>
                  </> : null
                 }
-   <button className="enrol-btn p-2 w-md-100">Enquire</button>
+   <button className="btn-main-outline-light mx-2 p-2 w-md-100">Enquire</button>
 
                
               </div>

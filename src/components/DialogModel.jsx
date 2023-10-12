@@ -3,7 +3,7 @@ import { Modal, Button, Form, Col, Row, Image } from 'react-bootstrap';
 import '../styles/dialogmodel.css'
 import BookDemoCard from './BookDemoCard';
 
-function DialogModel({ show, handleClose }) {
+function DialogModel({ show, onHide }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform registration logic here
@@ -11,11 +11,11 @@ function DialogModel({ show, handleClose }) {
     // Example: const formData = { name, email, password };
     // Send formData to your API or perform registration logic
     // Close the modal after successful registration
-    handleClose();
+    // handleClose();
   };
 
   return (
-    <Modal show={show} onHide={handleClose}
+    <Modal show={show} onHide={onHide}
     aria-labelledby="contained-modal-title-vcenter"
     centered className='modal'>
       <Modal.Header closeButton>

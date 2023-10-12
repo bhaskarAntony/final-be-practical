@@ -31,7 +31,7 @@ function Home() {
   }, []);
   return (
     <section className='home p-0 overflow-hidden'>
-         <DialogModel show={showModal} handleClose={handleCloseModal} />
+         <DialogModel show={showModal} onHide={handleCloseModal} />
         <HomeHero/>
         {/* <Stories/> */}
        <div className="spacer mt-5">

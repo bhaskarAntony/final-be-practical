@@ -26,14 +26,10 @@ function Footer() {
                     <div className="m1">
                         <h2 className='fs-4'>category</h2>
                         <ul>
-                            <li><a href="#">Mean</a></li>
-                            <li><a href="#">Mern</a></li>
-                            <li><a href="#">Python</a></li>
-                            <li><a href="#">Java</a></li>
-                            <li><a href="#">Dotnet</a></li>
-                            <li><a href="#">Software testing</a></li>
+                            <li><a href="#">Mern Fullstack</a></li>
+                            <li><a href="#">Python Fullstack</a></li>
+                            <li><a href="#">Java Fullstack</a></li>
                             <li><a href="#">Cloud Computing</a></li>
-                            <li><a href="#">Cloud Ops</a></li>
                             <li><a href="#">Digital Marketing</a></li>
                             <li><a href="#">Data Scince</a></li>
                         </ul>

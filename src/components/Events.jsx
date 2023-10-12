@@ -1,10 +1,11 @@
 // TabComponent.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css'; // Import the default styles
 import '../styles/events.css'
 import UpcomingEvents from './UpCommingEvents';
 import Feedback from './Feedback';
+import TicketBook from '../Modals/TicketBook';
 
 const upcomingevents = [
   {
@@ -53,8 +54,15 @@ const pastevents = [
   // Add more events here if needed
 ];
 function Events() {
+  const [BookTicket, setBookTicket] = useState(false)
+  const ticketBookHandler= ()=>{
+    setBookTicket(true)
+  }
   return (
   <div className="container-fluid events-main p-lg-5 p-md-1 p-1">
+    {
+      BookTicket?<TicketBook/> : null
+    }
       <div className="container-fluid">
       <Tabs>
     <TabList className="custom-tabs">

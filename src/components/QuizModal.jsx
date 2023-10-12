@@ -3,9 +3,9 @@ import { Button, Modal, Form, FloatingLabel } from 'react-bootstrap';
 
 const quizData = [
   {
-    question: 'What is the capital of France?',
-    options: ['New York', 'Paris', 'London'],
-    correctAnswer: 'Paris',
+    question: 'HTML stands for?',
+    options: ['hyper text markup language', 'hyper text mini language', 'hyper tune markup language', 'hyper transform marque language'],
+    correctAnswer: 'hyper text markup language',
   },
   // Add more questions as needed
 ];
@@ -56,11 +56,12 @@ function QuizModal() {
 
   return (
     <div>
+        <h1 className="banner-heading">Get 10% discount</h1>
         <div className="quiz-container bg-blue p-3 mt-3">
             <div className="row d-flex align-items-center">
                 <div className="col-12 col-md-8 col-lg-8">
                   <p className='card-heading text-900'>
-                  Here Test Your Skills Take This Simple Quiz and Get Free Certificate.
+                  Complete this simple Quiz and  get 10% discount in your course fees
                   </p>
                 </div>
                 <div className="col12 col-md-4 col-lg-4 text-lg-end text-center ">
@@ -71,13 +72,13 @@ function QuizModal() {
 
       <Modal show={showModal} onHide={closeModal}>
         <Modal.Header closeButton>
-          <Modal.Title>Quiz</Modal.Title>
+          <Modal.Title>Get 10% discount in your course fees</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {!isQuizCompleted ? (
             <div>
-              <h3>Question {currentQuestion + 1}:</h3>
-              <p>{quizData[currentQuestion].question}</p>
+              <h3>All the best 👍</h3>
+              <p> {currentQuestion + 1}) {quizData[currentQuestion].question}</p>
               <Form>
                 {quizData[currentQuestion].options.map((option, index) => (
                   <Form.Check
@@ -90,9 +91,11 @@ function QuizModal() {
                   />
                 ))}
               </Form>
+              <div className="text-center">
               <Button variant="primary" onClick={handleNextQuestion}>
-                Next
+                Next <i class="bi bi-chevron-double-right"></i>
               </Button>
+              </div>
             </div>
           ) : (
             <div>

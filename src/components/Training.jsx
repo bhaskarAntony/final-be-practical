@@ -31,7 +31,7 @@ function Training() {
       }, []);
     return (
         <div className='container-fluid p-3 py-5'>
-            <h3 className="banner-heading" data-aos="fade-up">Mode Of  <br />Training</h3>
+            <h3 className="banner-heading" data-aos="fade-up">Mode Of Training</h3>
             <div className="training-cards-container container p-3">
                 <div className="row">
                     {training.map((item, index) => (

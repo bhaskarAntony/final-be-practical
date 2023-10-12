@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     background-color: var(--bg-v5-green);
-    background: url('../images/low-poly-grid-haikei.svg') no-repeat center;
+    background: url('../images/course-card-bg.svg') no-repeat center;
     background-size: cover;
     justify-content: center;
     border-radius: 30px;

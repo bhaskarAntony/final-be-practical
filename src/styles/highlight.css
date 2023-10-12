@@ -1,11 +1,22 @@
 .highlight{
     border-radius: 20px;
-    background-color: rgba(5, 255, 80, 0.2) !important;
-  border: 1px solid rgba(147, 255, 172, 0.2);
+    background: linear-gradient(45deg, #023a2b, #06f2b3);
+  border: 1px solid rgba(70, 255, 212, 0.834);
     margin-top: 20px;
+    position: relative;
 }
 
 .highlight-card{
     padding: 15px;
     text-align: center;
+    color: #fff !important;
+}
+.blur-highlight{
+  background-color: rgb(33, 255, 255);
+  filter: blur(90px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
 }

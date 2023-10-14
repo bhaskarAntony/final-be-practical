@@ -73,7 +73,7 @@ function TrendingCourses() {
                       </div>
                       <div className="col-12 col-md-12 col-lg-8">
                <div className="course-card-body p-2">
-                  <h4 className='card-heading text-900'>{item.name}</h4>
+                  <h4 className='card-heading text-900 text-white'>{item.name}</h4>
                   <hr />
                   <div className="row">
                   <div className="col-6 p-2 text-center d-flex align-items-center">
@@ -98,7 +98,7 @@ function TrendingCourses() {
                   <div className="course-footer p-2 m-0">
                 
                 <div className="carousel-footer">
-                <button className="btn-main-outline-dark w-100 mb-2">Learn More</button>
+                <button className="btn-main-outline-light w-100 mb-2">Learn More</button>
                  <button className="btn-main w-100">enroll Now</button>
                 </div>
                 

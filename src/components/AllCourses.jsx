@@ -56,7 +56,7 @@ function AllCourses() {
         AOS.init(); // Initialize AOS
       }, []);
     return (
-      <div className='container'>
+      <div className='container all-courses'>
       <div className="row flex-wrap d-flex justify-content-center align-items-center">
           {courses.map((item, index) => (
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 d-flex justify-content-center">
@@ -72,7 +72,7 @@ function AllCourses() {
                       </div>
                       <div className="col-12 col-md-7 col-lg-8">
                <div className="course-card-body p-2">
-               <h4 className='card-heading text-900'>{item.name}</h4>
+               <h4 className='card-heading text-900 text-white'>{item.name}</h4>
                   <hr />
                   <div className="row">
                   <div className="col-6 p-2 text-center d-flex align-items-center">
@@ -97,7 +97,7 @@ function AllCourses() {
                   <div className="course-footer p-2 m-0">
                 
                 <div className="carousel-footer">
-                <button className="btn-main-outline-dark w-100 mb-2">Learn More</button>
+                <button className="btn-main-outline-light w-100 mb-2">Learn More</button>
                  <button className="btn-main w-100">enroll Now</button>
                 </div>
                 

@@ -1,11 +1,15 @@
+.all-course{
+    background-color: var(--bg-v5-green);
+}
 .course-card{
     /* background-color: var(--dark-green) !important; */
     border-radius: 30px !important;
     line-height: 1 !important;
     overflow: hidden;
     border: 1px solid #037c5a !important;
-    /* color: #fff !important; */
+    color: #fff !important;
     padding: 10px;
+    background-color: rgb(1, 29, 24) !important;
 }
 .course-card-header{
     min-height: 100%;
@@ -33,10 +37,11 @@ max-height: 150px;
     /* background-color: var(--dark-green); */
 }
 .course-card-body [class*="bi-"]{
-    color: rgb(1, 85, 61);
-    background-color: #15d49e72;
+    color: rgb(2, 255, 200);
+    background-color: #04763b2e;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid #056b4e61;
 
 }
 @media (max-width:998px){

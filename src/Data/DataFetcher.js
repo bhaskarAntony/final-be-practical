@@ -10,7 +10,8 @@ async function fetchData(endpoint) {
   }
 }
 
-const advantages = fetchData('http://localhost:3300/api/advantages');
-const companies = fetchData('http://localhost:3300/api/companies');
+const advantages = fetchData('https://fancy-mittens-ray.cyclic.app/api/advantages');
+const companies = fetchData('https://fancy-mittens-ray.cyclic.app/api/companies');
+const trainingModule = fetchData('https://fancy-mittens-ray.cyclic.app/api/trainingmodes');
 
-export { advantages, companies };
+export { advantages, companies, trainingModule };

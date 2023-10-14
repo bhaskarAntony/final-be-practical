@@ -1,10 +1,15 @@
 import React from 'react'
 import '../styles/certificate.css'
+import Aos from 'aos';
+import { useEffect } from 'react';
 
 function Certificate() {
+    useEffect(() => {
+        Aos.init(); // Initialize AOS
+      }, []);
   return (
    <div className="container-fluid">
-     <div className='container certificate'>
+     <div className='container certificate' data-aos="fade-left">
         <div className="row">
             <div className="col-12 col-md-4 col-lg-4">
                 <img src="https://svg.template.creately.com/BVJzef5PKaw" alt="" className="fluid-img w-100 mb-3" />

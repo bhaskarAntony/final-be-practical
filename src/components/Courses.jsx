@@ -11,7 +11,7 @@ function Courses() {
       AOS.init(); // Initialize AOS
     }, []);
   return (
-    <section>
+    <section className='bg-light'>
         <h3 className="banner-heading" data-aos="fade-up">Your Choice, Our Course</h3>
         <div className="container-md container-lg p-1">
       <Tabs className="courses-container py-3 p-lg-3 p-1 p-md-2">

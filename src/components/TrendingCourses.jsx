@@ -14,7 +14,9 @@ var courses = [
       ratedStudents: "465",
       rating:"4.5",
       icon: coder,
-      image: coder
+      image: coder,
+      path:"/course-fullstack"
+
   },
   {
       id:2,
@@ -26,7 +28,9 @@ var courses = [
       ratedStudents: "465",
       rating:"4.5",
       icon: coder,
-      image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      path:"/course-mern"
+
   },
   {
       id:4,
@@ -37,7 +41,9 @@ var courses = [
       ratedStudents: "465",
       rating:"4.5",
       icon: coder,
-      image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      path:"/course-cloud-computing"
+
   },
   {
       id:5,
@@ -48,7 +54,9 @@ var courses = [
       ratedStudents: "465",
       rating:"4.5",
       icon: coder,
-      image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      path:"/course-data-science"
+
   }
 ]
 
@@ -97,9 +105,9 @@ function TrendingCourses() {
                   {/* <p><small>{item.trainer}</small></p> */}
                   <div className="course-footer p-2 m-0">
                 
-                <div className="carousel-footer">
-                <button className="btn-main-outline-light w-100 mb-2">Learn More</button>
-                 <button className="btn-main w-100">enroll Now</button>
+                <div className="mt-4">
+                <a href={item.path}  className="btn-main-outline-light w-100 text-decoration-none">Learn More</a>
+                 <a href="" className="btn-main w-100 text-decoration-none mx-2">enroll Now</a>
                 </div>
                 
                </div>

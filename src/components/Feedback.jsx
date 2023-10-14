@@ -130,9 +130,6 @@ function Feedback() {
   return (
   <>
   <h1 className="banner-heading">What Peoples Saying <br />About Institute and Courses?</h1>
-  <div className="text-end p-3">
-    <a href="/all-testinomials" className='card-heading btn-main-outline-dark text-decoration-none'>Read All Testinomials  <i class="bi bi-chevron-double-right"></i></a>
-  </div>
     <Carousel
      interval={carouselInterval} 
      >
@@ -176,6 +173,9 @@ function Feedback() {
         </Carousel.Item>
       ))}
     </Carousel>
+    <div className="text-center p-3">
+    <a href="/all-testinomials" className='card-heading btn-main-outline-dark text-decoration-none p-2'>Read All Testinomials  <i class="bi bi-chevron-double-right"></i></a>
+  </div>
   </>
   );
 }

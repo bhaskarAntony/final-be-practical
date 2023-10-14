@@ -13,7 +13,8 @@ var courses = [
         ratedStudents: "465",
         rating:"4.5",
         icon: "https://cdn-icons-png.flaticon.com/128/7991/7991055.png",
-        image: "https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        image: "https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        path: "/course-fullstack"
     },
     {
         id:2,
@@ -25,7 +26,8 @@ var courses = [
         ratedStudents: "465",
         rating:"4.5",
         icon: "https://cdn-icons-png.flaticon.com/128/1183/1183669.png",
-        image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        path:"/course-mern"
     },
     {
         id:4,
@@ -36,7 +38,9 @@ var courses = [
         ratedStudents: "465",
         rating:"4.5",
         icon: "https://cdn-icons-png.flaticon.com/128/3305/3305673.png",
-        image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        path:"/course-cloud-computing"
+
     },
     {
         id:5,
@@ -47,7 +51,9 @@ var courses = [
         ratedStudents: "465",
         rating:"4.5",
         icon: "https://cdn-icons-png.flaticon.com/128/2756/2756778.png",
-        image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        path:"/course-data-science"
+
     }
 ]
 
@@ -75,7 +81,7 @@ function AllCourses() {
                <h4 className='card-heading text-900 text-white'>{item.name}</h4>
                   <hr />
                   <div className="row">
-                  <div className="col-6 p-2 text-center d-flex align-items-center">
+                  <div className="col-6 p-2 text-center d-flex align-items-center ">
                       <i class="bi bi-clock  mx-2 fs-4"></i>
                       <p>{item.duration}</p>
                       </div>
@@ -96,9 +102,9 @@ function AllCourses() {
                   {/* <p><small>{item.trainer}</small></p> */}
                   <div className="course-footer p-2 m-0">
                 
-                <div className="carousel-footer">
-                <button className="btn-main-outline-light w-100 mb-2">Learn More</button>
-                 <button className="btn-main w-100">enroll Now</button>
+                  <div className="mt-4">
+                <a href={item.path}  className="btn-main-outline-light w-100 text-decoration-none">Learn More</a>
+                 <a href="" className="btn-main w-100 text-decoration-none mx-2">enroll Now</a>
                 </div>
                 
                </div>

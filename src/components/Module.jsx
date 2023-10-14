@@ -25,7 +25,6 @@ const Module = (props) => {
         <div
           className={`faq-item ${activeIndex === index ? 'active' : ''} bg-dark-green`}
           key={index}
-          data-aos="fade-up"
         >
           <div className="faq-question d-flex align-items-center" onClick={() => toggleAccordion(index)}>
             <span className="count p-2 px-3 rounded-5  text-white">

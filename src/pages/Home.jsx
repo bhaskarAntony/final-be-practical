@@ -15,6 +15,8 @@ import Courses from '../components/Courses';
 import Stories from '../components/Stories';
 import QuizModal from '../components/QuizModal';
 import Batchtable from '../components/Batchtable';
+import EliteProgram from '../components/EliteProgram';
+import Elite from '../components/Elite';
 
 function Home() {
       // Model open logic
@@ -37,6 +39,8 @@ function Home() {
        <div className="spacer mt-5">
        <Courses/>
        </div>
+       <Elite/>
+       <EliteProgram/>
         <Training/>
         <Companies/>
         <Batchtable/>

@@ -1,12 +1,12 @@
 
 .elite{
     background-color: var(--dim-black) ;
-    padding: 7%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: s;
     gap: 50px;
     align-items: center;
+    border-radius: 20px;
 }
 .elite-card {
     text-align: center;

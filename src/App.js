@@ -28,7 +28,7 @@ import Progressbar from './Extra/Progressbar'
 
 function App() {
 
-  const [showRegistrationModal, setShowRegistrationModal] = useState(true);
+  const [showRegistrationModal, setShowRegistrationModal] = useState(false);
 
   const openRegistrationModal = () => {
     setShowRegistrationModal(true);

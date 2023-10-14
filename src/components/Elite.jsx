@@ -4,9 +4,9 @@ import '../styles/elite.css'
 function Elite() {
   return (
     <section>
-      <div className="elite text-black">
+      <div className="container elite text-black">
         <h2 className="text-center text-white">Join our <span className="main-text">Elite</span> Program, Get 50% Refund if not Placed</h2>
-        <div className="elite-card-container container">
+        <div className="elite-card-container container elite rounded-5">
         <div className="row">
           <div className="col-6 col-sm-6 col-md-3 col-lg-2">
             <div className="elite-card elite-c1" data-aos="zoom-out-up">

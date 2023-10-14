@@ -25,6 +25,7 @@ import { useRef } from 'react'
 import SimpleRegister from './components/SimpleRegister'
 import ScrollProgressBar from './Extra/ScrollProgressbar'
 import Progressbar from './Extra/Progressbar'
+import AllTestimomials from './pages/AllTestinomials'
 
 function App() {
 
@@ -88,6 +89,7 @@ const onLoad = () => {
         <Route path='/elite' element={<ElitePage/>}/>
         <Route path='/register' element={<RegistrationPage/>}/>
         <Route path='/book-demo' element={<BookDemo/>}/>
+        <Route path='/all-testinomials' element={<AllTestimomials/>}/>
         </Routes>
         </BrowserRouter>
         <ScrollToTopButton/>

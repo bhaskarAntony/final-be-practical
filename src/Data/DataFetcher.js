@@ -13,5 +13,6 @@ async function fetchData(endpoint) {
 const advantages = fetchData('https://fancy-mittens-ray.cyclic.app/api/advantages');
 const companies = fetchData('https://fancy-mittens-ray.cyclic.app/api/companies');
 const trainingModule = fetchData('https://fancy-mittens-ray.cyclic.app/api/trainingmodes');
+const testinomials = fetchData('https://fancy-mittens-ray.cyclic.app/api/testimonials');
 
-export { advantages, companies, trainingModule };
+export { advantages, companies, trainingModule, testinomials };

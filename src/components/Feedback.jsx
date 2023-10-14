@@ -3,6 +3,8 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/feedback.css'
 import AOS from 'aos';
+import { testinomials } from '../Data/DataFetcher';
+import ReadMore from '../Extra/ReadMore';
 
 const items = [
   {
@@ -64,6 +66,17 @@ const items = [
 
 function Feedback() {
 
+  const [loading, setLoading] = useState(true)
+    const [testinomialData, setTestinomialData] = useState([]);
+    useEffect(() => {
+        testinomials
+          .then((data) => {
+            setTestinomialData(data)
+            setLoading(false)
+          })
+          .catch((error) => console.error('Error fetching advantages:', error));
+      }, []);
+
     useEffect(() => {
         AOS.init(); // Initialize AOS
       }, []);
@@ -106,7 +119,7 @@ function Feedback() {
     };
   
 
-  const carouselItems = items.reduce((accumulator, current, index) => {
+  const carouselItems = testinomialData.reduce((accumulator, current, index) => {
     if (index % itemsPerSlide === 0) {
       accumulator.push([]);
     }
@@ -114,41 +127,12 @@ function Feedback() {
     return accumulator;
   }, []);
 
-
-  function ReadMore({ text, maxLength }) {
-    const [isTruncated, setIsTruncated] = useState(true);
-  
-    const toggleTruncate = () => {
-      setIsTruncated(!isTruncated);
-    };
-  
-    return (
-      <div>
-        {isTruncated ? (
-          <div>
-            {text.slice(0, maxLength)}
-            {text.length > maxLength && (
-              <p onClick={toggleTruncate} className="read-more-button text-black fw-bold">
-                ...Read More
-              </p>
-            )}
-          </div>
-        ) : (
-          <div>
-            {text}
-            <p onClick={toggleTruncate} className="read-less-button text-black fw-bold">
-              Read Less
-            </p>
-          </div>
-        )}
-      </div>
-    );
-  }
-
   return (
   <>
   <h1 className="banner-heading">What Peoples Saying <br />About Institute and Courses?</h1>
-  <p className="p-light-small text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+  <div className="text-end p-3">
+    <a href="/all-testinomials" className='card-heading btn-main-outline-dark text-decoration-none'>Read All Testinomials  <i class="bi bi-chevron-double-right"></i></a>
+  </div>
     <Carousel
      interval={carouselInterval} 
      >
@@ -168,7 +152,7 @@ function Feedback() {
                                             data-aos-duration="500">
               <div key={item.id} className="custom-carousel-item">
                 <div className="feedback-header mb-2">
-                    <img src={item.profile} alt="" />
+                    <img src="https://cdn-icons-png.flaticon.com/128/1177/1177568.png" alt="" />
                         <div>
                         <h4 className='card-heading fw-bold'>{item.name}</h4>
                         <small className='fw-bold'>{item.role}</small>
@@ -181,7 +165,7 @@ function Feedback() {
                   ))}
                 </div>
                 <p className='p-dark-small'>
-                <ReadMore text={item.feedback} maxLength={100} />
+                <ReadMore text={item.content} maxLength={100} />
                 </p>
               </div>
               </div>

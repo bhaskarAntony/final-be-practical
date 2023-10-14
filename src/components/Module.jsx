@@ -2,9 +2,14 @@
 
 import React, { useState } from 'react';
 import '../styles/module.css'; // Import your CSS file
+import { useEffect } from 'react';
+import Aos from 'aos';
 
 
 const Module = (props) => {
+  useEffect(() => {
+    Aos.init(); // Initialize AOS
+  }, []);
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -20,6 +25,7 @@ const Module = (props) => {
         <div
           className={`faq-item ${activeIndex === index ? 'active' : ''} bg-dark-green`}
           key={index}
+          data-aos="fade-up"
         >
           <div className="faq-question d-flex align-items-center" onClick={() => toggleAccordion(index)}>
             <span className="count p-2 px-3 rounded-5  text-white">

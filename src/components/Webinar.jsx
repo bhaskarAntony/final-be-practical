@@ -133,7 +133,7 @@ function Webinar() {
           onMouseLeave={handleCarouselLeave}
         >
           <div className="d-flex flex-wrap container-fluid">
-          <div className="row w-100">
+          <div className="row w-100 d-flex justify-conent-center">
 
             {slideItems.map((item) => (
                 <div className="col-12 col-md-6 col-lg-4">

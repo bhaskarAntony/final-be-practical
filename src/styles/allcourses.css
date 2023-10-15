@@ -7,9 +7,9 @@
     line-height: 1 !important;
     overflow: hidden;
     border: 1px solid #037c5a !important;
-    color: #fff !important;
+    color: #161616 !important;
     padding: 10px;
-    background-color: rgb(1, 29, 24) !important;
+    background: #fff;
 }
 .course-card-header{
     min-height: 100%;
@@ -37,7 +37,7 @@ max-height: 150px;
     /* background-color: var(--dark-green); */
 }
 .course-card-body [class*="bi-"]{
-    color: rgb(2, 255, 200);
+    color: rgb(3, 117, 92);
     background-color: #04763b2e;
     padding: 10px;
     border-radius: 10px;

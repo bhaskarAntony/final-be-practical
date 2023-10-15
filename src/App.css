@@ -299,3 +299,9 @@ font-size: 1.5rem;
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  .eater-container{
+    width: 200px;
+    height: 200px;
+    background: url('./images/Eat-loading.svg') no-repeat center;
+    background-size: cover;
+  }

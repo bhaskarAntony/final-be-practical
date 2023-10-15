@@ -26,8 +26,19 @@ import SimpleRegister from './components/SimpleRegister'
 import ScrollProgressBar from './Extra/ScrollProgressbar'
 import Progressbar from './Extra/Progressbar'
 import AllTestimomials from './pages/AllTestinomials'
+import PageLoader from './Modals/PageLoader'
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Simulate loading for 2 seconds (adjust the duration as needed)
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    });
+  }, []);
+   
 
 
   const [showRegistrationModal, setShowRegistrationModal] = useState(false);
@@ -62,6 +73,11 @@ const onLoad = () => {
 };
   return (
     <div>
+       {
+       loading ? (
+        <PageLoader />
+      ) : (
+          <>
            <SimpleRegister show={showRegistrationModal} onClose={closeRegistrationModal} />
        <TawkMessengerReact
                 propertyId="https://tawk.to/chat/6524d9286fcfe87d54b8416a/1hcbv0iqn"
@@ -94,6 +110,8 @@ const onLoad = () => {
         </BrowserRouter>
         <ScrollToTopButton/>
       <Footer/>
+          </>
+      )}
     </div>
   )
 }

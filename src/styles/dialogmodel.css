@@ -1,21 +1,19 @@
 .modal{
-    border-radius: 20px !important;
     background-color: transparent;
-    backdrop-filter: blur(60px);
 }
 .modal-content{
-    border-radius: 1px !important;
+    border-radius: 10px !important;
     background-color: #fff !important;
 }
 .dialog-modal{
-    border-radius: 1px;
+    border-radius: 10px;
     padding: 20px 10px;
 }
 .modal-form .form-control{
     padding: 15px;
     font-size: 1.2em;
     background-color: transparent;
-    background-color: #3cffd124;
+    background-color: #3cffd124 !important;
     border: 2px solid var(--green-light-color);
 }
 .modal-form .form-label{

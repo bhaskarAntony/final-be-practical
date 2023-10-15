@@ -55,9 +55,9 @@ function QuizModal() {
   };
 
   return (
-    <div>
+    <div className='container'>
         <h1 className="banner-heading">Get 10% discount</h1>
-        <div className="quiz-container bg-blue p-3 mt-3">
+        <div className="quiz-container bg-blue p-3 mt-3 rounded-5">
             <div className="row d-flex align-items-center">
                 <div className="col-12 col-md-8 col-lg-8">
                   <p className='card-heading text-900'>

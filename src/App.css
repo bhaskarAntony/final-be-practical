@@ -36,6 +36,9 @@
   width: 100%;
   background-color: var(--green-main-color);
 }
+.bg-light{
+  background: var(--light-color) !important;
+}
 .bg-light-green{
   background: var(--green-light-color) !important;
 }

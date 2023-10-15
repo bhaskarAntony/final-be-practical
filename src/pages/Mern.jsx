@@ -8,6 +8,7 @@ import Feedback from '../components/Feedback'
 import Languages from '../components/Languages'
 import CourseCard from '../components/CourseCard'
 import Module from '../components/Module'
+import FaqSection from '../components/FaqSection'
 
 var languages =[
     {
@@ -164,6 +165,7 @@ function Mern() {
     <Adwantages/>
     <YoutubeVideos/>
     <Feedback/>
+    <FaqSection/>
     </section>
   )
 }

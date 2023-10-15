@@ -12,7 +12,6 @@ import Adwantages from '../components/Adwantages';
 import Skills from '../components/Skills';
 import StudentsPlaced from '../components/StudentsPlaced';
 import Courses from '../components/Courses';
-import Stories from '../components/Stories';
 import QuizModal from '../components/QuizModal';
 import Batchtable from '../components/Batchtable';
 import EliteProgram from '../components/EliteProgram';

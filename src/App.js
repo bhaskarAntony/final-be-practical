@@ -22,11 +22,11 @@ import BookDemo from './components/BookDemo'
 import ScrollToTopButton from './components/ScrollToTopButton'
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 import { useRef } from 'react'
-import SimpleRegister from './components/SimpleRegister'
 import ScrollProgressBar from './Extra/ScrollProgressbar'
 import Progressbar from './Extra/Progressbar'
 import AllTestimomials from './pages/AllTestinomials'
 import PageLoader from './Modals/PageLoader'
+import SimpleRegister from './Modals/SimpleRegister'
 
 function App() {
   const [loading, setLoading] = useState(true);

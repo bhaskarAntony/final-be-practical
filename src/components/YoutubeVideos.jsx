@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react'
 import '../styles/youtubevideo.css'
 import { Carousel } from 'react-bootstrap';
 import AOS from 'aos';
-import YoutubeVideosModal from '../Modals/VideosModal';
+import ReadMore from '../Extra/ReadMore'
+import { youtubeVideos } from '../Data/DataFetcher';
+import ShimmerCard from '../shimmer effects/ShimmerCard';
+import BookDemoBtn from '../Extra/BookDemoBtn';
 
   const youtubevideos = [
     {
@@ -79,6 +82,16 @@ import YoutubeVideosModal from '../Modals/VideosModal';
     // Add more video objects as needed
   ];
 function StudentsPlaced() {
+  const [loading, setLoading] = useState(true)
+    const [youtubeVideosData, setYoutubeVideosData] = useState([]);
+    useEffect(() => {
+        youtubeVideos
+          .then((data) => {
+            setYoutubeVideosData(data)
+            setLoading(false)
+          })
+          .catch((error) => console.error('Error fetching advantages:', error));
+      }, []);
 
   const extractVideoId = (link) => {
     const regex = /(?:\?v=|\/embed\/|\.be\/|\/v\/|\/e\/|watch\?v=|\/watch\?v=|\/watch\?feature=player_embedded&v=|%2Fvideos%2F|embed\/|youtu.be\/|v=|u\/\w\/|embed\?src=|video\/|embed\?video_id=)([^#\&\?]*).*/;
@@ -131,44 +144,13 @@ function StudentsPlaced() {
     };
   
 
-  const carouselItems = youtubevideos.reduce((accumulator, current, index) => {
+  const carouselItems = youtubeVideosData.reduce((accumulator, current, index) => {
     if (index % itemsPerSlide === 0) {
       accumulator.push([]);
     }
     accumulator[accumulator.length - 1].push(current);
     return accumulator;
   }, []);
-
-
-  function ReadMore({ text, maxLength }) {
-    const [isTruncated, setIsTruncated] = useState(true);
-  
-    const toggleTruncate = () => {
-      setIsTruncated(!isTruncated);
-    };
-  
-    return (
-      <div>
-        {isTruncated ? (
-          <div>
-            {text.slice(0, maxLength)}
-            {text.length > maxLength && (
-              <p onClick={toggleTruncate} className="read-more-button text-danger">
-                Read More
-              </p>
-            )}
-          </div>
-        ) : (
-          <div>
-            {text}
-            <p onClick={toggleTruncate} className="read-less-button text-danger">
-              Read Less
-            </p>
-          </div>
-        )}
-      </div>
-    );
-  }
   return (
     <section className=' p-2 py-5 youtube-container' id="placed">
         <h3 className="banner-heading" data-aos="fade-up">What our students says <br /> about institute</h3>
@@ -186,8 +168,18 @@ function StudentsPlaced() {
         >
           <div className="d-flex flex-wrap  p-3 container">
           <div className="row w-100">
-
-            {slideItems.map((item) => (
+          {loading ? (
+              Array(9)
+                .fill(null)
+                .map((_, index) => (
+                  <div className="col-6 col-md-3 col-lg-2 rounded-2 p-3" key={index}>
+                    <div>
+                    <ShimmerCard />
+                    </div>
+                  </div>
+                ))
+            ):(
+            slideItems.map((item) => (
                 <div className="col-12 col-md-6 col-lg-4">
             <div className="youtube-card">
             <div className="youtube-header">
@@ -198,7 +190,7 @@ function StudentsPlaced() {
                           >
                             <img
                               src={getThumbnailUrl(
-                                extractVideoId(item.youtubevedUrl)
+                                extractVideoId(item.url)
                               )}
                               alt={`Thumbnail ${index}`}
                               className="w-100 h-100"/>
@@ -220,7 +212,7 @@ function StudentsPlaced() {
                           </div>
             </div>
                 </div>
-            ))}
+            )))}
               </div>
           </div>
         </Carousel.Item>
@@ -228,7 +220,7 @@ function StudentsPlaced() {
     </Carousel>
       </div>
       <div className="text-center py-5">
-        <button className="btn-main">Enroll This Course <i class="bi bi-chevron-double-right"></i></button>
+      <BookDemoBtn text={"Enroll Placement Program"}/>
       </div>
     </section>
   )

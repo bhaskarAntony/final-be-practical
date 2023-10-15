@@ -90,15 +90,16 @@ const SimpleRegister = ({ show, onClose }) => {
               {renderStep()}
               <div className="text-center mt-3">
                 {step > 1 && (
-                  <button className="btn btn-primary mr-2 mx-2 p-2" onClick={() => setStep(step - 1)}>
-                    Previous
+                  <button className='mx-2 btn-main-outline-dark p-2' onClick={() => setStep(step - 1)}>
+                     <i class="bi bi-chevron-double-left"></i>
+                     Previous
                   </button>
                 )}
                 {step < 2 ? (
-                 <Button  onClick={handleNext} className='mx-2'>Next</Button>
+                 <Button  onClick={handleNext} className=' w-100 p-3'>Next <i class="bi bi-chevron-double-right"></i></Button>
                 ) : (
-                  <button type="submit" className="btn btn-success mx-2">
-                    Submit
+                  <button type="submit" className="btn-main mx-2 px-3">
+                    Submit <i class="bi bi-chevron-double-right"></i>
                   </button>
                 )}
               </div>

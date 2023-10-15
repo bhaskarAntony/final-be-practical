@@ -4,6 +4,8 @@ import '../styles/adwantage.css'
 import { advantages } from '../Data/DataFetcher';
 import ShimmerComponent from './ShimmerComponent';
 import ShimmerCard from '../shimmer effects/ShimmerCard';
+import ApplyNow from '../Extra/ApplyNow';
+import BookDemoBtn from '../Extra/BookDemoBtn';
 function Adwantages() {
   const [loading, setLoading] = useState(true)
     console.log(advantages)
@@ -55,8 +57,8 @@ function Adwantages() {
             )}
         </div>
         <div className="py-5">
-          <button className='btn-main-outline-dark m-2' data-aos="fade-up">Join Now <i className="bi bi-chevron-double-right"></i></button>
-          <button className='btn-main m-2' data-aos="fade-up">Book Your Free Master Classes <i className="bi bi-chevron-double-right"></i></button>
+          <ApplyNow text={"Join Now"}/>
+         <BookDemoBtn text={"Book Your Free Master Classes"}/>
         </div>
       </div>
     </section>

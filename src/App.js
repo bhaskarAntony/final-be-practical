@@ -32,12 +32,10 @@ function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     // Simulate loading for 2 seconds (adjust the duration as needed)
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-    });
-  }, []);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []); 
    
 
 

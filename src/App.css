@@ -51,6 +51,9 @@
 .bg-main-green{
   background-color: var(--green-main-color);
 }
+.bg-v5-green-500 {
+  background-color: rgb(0 66 70/1)!important;
+}
 
 
 .light-green-text{
@@ -100,7 +103,7 @@
     color: var(--text-black);
     font-size: 2rem;
     line-height: 1.375!important;
-    font-weight: 600!important;
+    font-weight: 800!important;
     width: 100%;
     text-align: center;
     text-transform: capitalize !important;
@@ -112,12 +115,14 @@
   font-size: 1rem;
 }
 .p-light-small{
-    color: #6b6b6b;
     font-size: 1rem;
+    color: rgb(122 139 135/1)!important;
+    font-weight: 300!important;
 }
 .p-light-large{
-  color: #6b6b6b;
+  color: rgb(122 139 135/1)!important;
   font-size: 2rem;
+  font-weight: 300!important;
 }
 .p-dark-large1{
   font-size: 1.2rem;

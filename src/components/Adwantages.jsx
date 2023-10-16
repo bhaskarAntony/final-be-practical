@@ -42,7 +42,7 @@ function Adwantages() {
                 <div className="col-12 col-sm-12 col-md-6 col-lg-4" key={index}>
                   <div className="adwantage-card mb-3 p-3" data-aos="zoom-in-down">
                     <div className="adwantage-header">
-                      <div className="icon">
+                      <div className="icon bg-light-green">
                         <img src={item.image} alt={item.title} className='w-100' />
                       </div>
                     </div>

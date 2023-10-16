@@ -9,6 +9,7 @@ import Languages from '../components/Languages'
 import CourseCard from '../components/CourseCard'
 import Module from '../components/Module'
 import FaqSection from '../components/FaqSection'
+import LandDreamJob from '../components/LandDreamJob'
 
 var languages =[
     {
@@ -109,11 +110,11 @@ function Mern() {
                                         <div className="devider"></div>
                                         <div className="row">
                                             <div className="col-6">
-                                                <small>DREAM JOBS</small>
+                                                <small>MIN DREAM JOBS</small>
                                                 <h4 class="heading-small">6-15 LPA</h4>
                                             </div>
                                             <div className="col-6">
-                                                <small>SUPER DREAM JOBS</small>
+                                                <small>HIGHEST SALARY</small>
                                                 <h4 className="heading-small">15-40 LPA</h4>
                                             </div>
                                         </div>
@@ -121,12 +122,12 @@ function Mern() {
                                 </div>
                                 <div className="col-12 col-md-4 col-lg-4">
                                     <div className="course-highlight-right bg-light-green rounded-4 p-2 text-center mb-2">
-                                    <small>SUPER DREAM JOBS</small>
+                                    <small>COURSE DURATION</small>
                                                 <p className="heading-small">15-40 LPA</p>
                                                 <div className="devider"></div>
 
-                                                <small>SUPER DREAM JOBS</small>
-                                                <h4 className="heading-small">15-40 LPA</h4>
+                                                <small>DEMO CLASSES</small>
+                                                <h4 className="heading-small">FREE</h4>
                                     </div>
                                 </div>
                             </div>
@@ -160,6 +161,7 @@ function Mern() {
                 </div>
             </div>
       </section>
+      <LandDreamJob/>
     <Companies/>
     <Module modules={Mern_module}/>
     <Adwantages/>

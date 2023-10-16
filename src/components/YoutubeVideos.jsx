@@ -6,6 +6,7 @@ import ReadMore from '../Extra/ReadMore'
 import { youtubeVideos } from '../Data/DataFetcher';
 import ShimmerCard from '../shimmer effects/ShimmerCard';
 import BookDemoBtn from '../Extra/BookDemoBtn';
+import Insights from './Insights';
 
   const youtubevideos = [
     {
@@ -156,6 +157,7 @@ function StudentsPlaced() {
         <h3 className="banner-heading" data-aos="fade-up">What our students says <br /> about institute</h3>
         <p className=" text-center p-light-small " data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">
+        <Insights/>
       <Carousel
        interval={carouselInterval}
        onMouseEnter={handleCarouselHover}
@@ -181,7 +183,7 @@ function StudentsPlaced() {
             ):(
             slideItems.map((item) => (
                 <div className="col-12 col-md-6 col-lg-4">
-            <div className="youtube-card">
+            <div className="youtube-card bg-v5-green-500">
             <div className="youtube-header">
                           <a
                           

@@ -9,7 +9,7 @@ function BookDemoBtn({text}) {
     const onHide = () => setShowModal(false);
   return (
     <>
-         <button className='btn-main m-2 hero-btn py-3' onClick={openModal}>{text}<i class="bi bi-chevron-double-right"></i></button>
+         <button className='btn-main m-2  py-3' onClick={openModal}>{text}<i class="bi bi-chevron-double-right"></i></button>
            <SimpleRegister
         show={showModal}
         onClose={onHide}

@@ -4,6 +4,8 @@
     min-width: 100% !important;
     /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
     background-color: var(--light-color);
+    background: url('../images/blurry-gradient-haikei.svg') no-repeat center;
+    background-size: cover;
     border-radius: 30px;
 
 }
@@ -12,6 +14,8 @@
     padding: 20px;
     border-radius: 10px;
     background-color: var(--dark-green);
+    /* background: url('../images/blurry-gradient-haikei.svg') no-repeat center; */
+    background-size: cover;
 }
 .placed-card-header img{
     width: 100px;

@@ -2,7 +2,9 @@
 .hero{
     padding: 10px;
     min-height: 100vh;
-    background-color: var(--hero-dark-green);
+    /* background-color: var(--hero-dark-green); */
+    background: url('../images/blurry-gradient-haikei.svg') no-repeat center;
+    background-size: cover;
     position: relative;
     margin-bottom: 100px;
 

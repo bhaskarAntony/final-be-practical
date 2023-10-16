@@ -158,8 +158,8 @@ function Webinar() {
         </div>
       </div>
       <div className="text-center py-5">
-        <button className="btn-main-outline-light m-1">join For free Demo Classes <i class="bi bi-chevron-double-right"></i></button>
-        <button className="btn-main m-1">join For free Demo Classes <i class="bi bi-chevron-double-right"></i></button>
+        <button className="btn-main-outline-light m-1">Explore Events<i class="bi bi-chevron-double-right"></i></button>
+        <button className="btn-main m-1">Book Master Classes<i class="bi bi-chevron-double-right"></i></button>
       </div>
     </section>
   </>

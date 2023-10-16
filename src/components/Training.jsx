@@ -43,7 +43,7 @@ function Training() {
           .catch((error) => console.error('Error fetching advantages:', error));
       }, []);
     return (
-        <div className='container-fluid p-3 py-5'>
+        <div className='container-fluid p-3 py-1'>
             <h3 className="banner-heading" data-aos="fade-up">Mode Of Training</h3>
             <div className="training-cards-container container p-3">
                 <div className="row">
@@ -69,8 +69,8 @@ function Training() {
                                 </div>
                                 <div className="col-lg-12 col-md-12 col-sm-10 col-10">
                                 <div className="card-body">
-                                <h4 className='card-heading'>{item.heading}</h4>
-                                <p className='p-light-small'>{item.description}</p>
+                                <h4 className='card-heading text-900'>{item.heading}</h4>
+                                <p className='p-light-small text-black'>{item.description}</p>
                                 </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ function Training() {
 
                 </div>
             </div>
-            <div className="p-4 text-center py-5">
+            <div className="p-4 text-center py-2">
             <button className="btn-main">Book Your Free Trail, Now <i class="bi bi-chevron-double-right"></i></button>
             </div>
         </div>

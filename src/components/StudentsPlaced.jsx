@@ -151,13 +151,13 @@ function StudentsPlaced() {
                     </div>
                 </div>
                 <div className="placed-card-body">
-                    <span className="fs-4 placed-student-name">{item.name}</span>
-                    <p className="p-dark-small">{item.started}</p>
+                    <span className="fs-4 placed-student-name text-900 text-black">{item.name}</span>
+                    <p className="p-dark-small text-black text-900">{item.started}</p>
                     <div className="arrow">
                         <img src="https://cdn-icons-png.flaticon.com/128/3227/3227489.png" alt="" />
                     </div>
-                    <p className="p-light-small">{item.role}</p>
-                    <div className="placed-company">
+                    <p className="p-light-small text-white text-900 bg-black p-2 rounded-5">{item.role}</p>
+                    <div className="placed-company bg-white rounded-5">
                         <img src={item.company} alt="" />
                     </div>
                 </div>

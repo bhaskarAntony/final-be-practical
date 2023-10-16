@@ -47,8 +47,8 @@ function Adwantages() {
                       </div>
                     </div>
                     <div className="adwantage-card-body">
-                      <h5 className='card-heading'>{item.title}</h5>
-                      <p className="p-light-small">{item.content}</p>
+                      <h5 className='card-heading text-900'>{item.title}</h5>
+                      <p className="p-dark-small text-black">{item.content}</p>
                     </div>
                     <div className="adwantage-card-footer"></div>
                   </div>
@@ -58,7 +58,7 @@ function Adwantages() {
         </div>
         <div className="py-5">
           <ApplyNow text={"Join Now"}/>
-         <BookDemoBtn text={"Book Your Free Master Classes"}/>
+         <BookDemoBtn text={"Book Your Master Classes"}/>
         </div>
       </div>
     </section>

@@ -10,19 +10,19 @@ function Highlight() {
       <div className="row">
         <div className="col-4">
             <div className="highlight-card">
-                <h1 className='heading-small text-white'>11 LPA</h1>
+                <h1 className='heading-small text-900'>11 LPA</h1>
                 <p className='p-dark-small text-white'><small>average dream job CTC</small></p>
             </div>
         </div>
         <div className="col-4">
             <div className="highlight-card ">
-            <h1 className='heading-small text-white'>11 LPA</h1>
+            <h1 className='heading-small text-900'>11 LPA</h1>
                 <p className='p-dark-small text-white'><small>average dream job CTC</small></p>
             </div>
         </div>
         <div className="col-4">
             <div className="highlight-card">
-            <h1 className='heading-small text-white'>11 LPA</h1>
+            <h1 className='heading-small text-900'>11 LPA</h1>
                 <p className='p-dark-small text-white'><small>average dream job CTC</small></p>
             </div>
         </div>

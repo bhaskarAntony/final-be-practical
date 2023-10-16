@@ -166,7 +166,6 @@ function Companies() {
           </div>
         </div>
       </div>
-      <Highlight />
     </section>
   )
 }

@@ -9,7 +9,7 @@ function Insights() {
       Get more insights on how Be practical can help you crack a
         Software Job in top tech companies
       </h1>
-      <ApplyNow text={"Download Course Browcher"}/>
+      <ApplyNow text={"Download Course Broucher"}/>
       <ApplyNow text={"Apply & Book Master Classes"}/>
     </div>
    </div>

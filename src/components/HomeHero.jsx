@@ -88,10 +88,10 @@ function HomeHero() {
               <div className="row">
                 <div className="col-12 col-sm-12 col-md-12 col-lg-7">
                   <div className="hero-text p-lg-5 p-md-3 p-2">
-                    <h1 className="heading text-white text-start">{item.heading}</h1>
-                    <p className="text-white heading-subtitle my-4">{item.subheading}</p>
+                    <h1 className="heading text-black text-900 text-start">{item.heading}</h1>
+                    <p className="text-900 text-black heading-subtitle my-4">{item.subheading}</p>
                     <div className="carousel-footer w-100">
-                      <button className='btn-main-outline-light m-2 hero-btn py-3'>Join For Free <i class="bi bi-chevron-double-right"></i></button>
+                      <button className='btn-main-outline-dark m-2 hero-btn py-3'>Join For Free <i class="bi bi-chevron-double-right"></i></button>
                       <button className='btn-main m-2 hero-btn py-3' onClick={openModal}>Book Your Free Master Classes <i class="bi bi-chevron-double-right"></i></button>
                     </div>
                     <Highlight />

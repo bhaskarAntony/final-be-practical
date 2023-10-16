@@ -40,13 +40,13 @@ function Home() {
        </div>
        <Elite/>
        <EliteProgram/>
+       <Skills/>
         <Training/>
         <Companies/>
         <Batchtable/>
         <Webinar/>
         <QuizModal/>
         <Adwantages/>
-        <Skills/>
         <YoutubeVideos/>
         <Certificate/>
         <ChatWithus/>

@@ -6,13 +6,14 @@
     /* background-color: var(--dark-green); */
   }
   .gallery-container{
-    background-color: var(--bg-v5-green);
+    background-color:#040404;
   }
   .gallery-card{
-    background-color: var(--dark-green);
+    background-color: #1d1c1c;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 20px;
+    border: 1px solid #8f8f8f7b;
   }
   .gallery-card:hover{
     background-color: var(--green-main-color) !important;
@@ -39,7 +40,7 @@
     border-radius: 20px;
   }
   .gallery-card-body{
-    background-color: var( --hero-dark-green);
+    background-color:#73717172;
     padding: 10px;
     border-radius: 20px;
   }

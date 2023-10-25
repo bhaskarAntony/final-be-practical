@@ -27,6 +27,7 @@ import Progressbar from './Extra/Progressbar'
 import AllTestimomials from './pages/AllTestinomials'
 import PageLoader from './Modals/PageLoader'
 import SimpleRegister from './Modals/SimpleRegister'
+import CoursePageEngine from './pages/CoursePageEngine'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -82,10 +83,10 @@ const onLoad = () => {
                 widgetId="default"
                 onLoad={onLoad}
                 />
-      <Header/>
       <ScrollProgressBar/>
       <Progressbar/>
         <BrowserRouter>
+      <Header/>
         <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/course-fullstack' element={<FullStack/>}/>
@@ -104,6 +105,7 @@ const onLoad = () => {
         <Route path='/register' element={<RegistrationPage/>}/>
         <Route path='/book-demo' element={<BookDemo/>}/>
         <Route path='/all-testinomials' element={<AllTestimomials/>}/>
+        <Route path='/course/:course/:id' element={<CoursePageEngine/>}/>
         </Routes>
         </BrowserRouter>
         <ScrollToTopButton/>

@@ -138,12 +138,12 @@ function Feedback() {
           onMouseEnter={handleCarouselHover}
           onMouseLeave={handleCarouselLeave}
         >
-          <div className="d-flex flex-wrap feedback p-3">
+          <div className="w-100 feedback p-3">
           <div className="row">
 
             {slideItems.map((item) => (
                 <div className="col-12 col-md-6 col-lg-4">
-              <div className="feedback-card" data-aos="fade-left"
+              <div className="feedback-card w-100" data-aos="fade-left"
                                             data-aos-anchor="#example-anchor"
                                             data-aos-offset="500"
                                             data-aos-duration="500">

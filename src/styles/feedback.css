@@ -1,9 +1,4 @@
 
-.feedback{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .feedback-card{
     width: 100%;
     overflow: auto;

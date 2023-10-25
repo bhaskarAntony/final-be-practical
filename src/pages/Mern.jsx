@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/coursepage.css'
 import HeroRegister from '../components/HeroRegister'
 import Companies from '../components/Companies'
@@ -10,38 +10,40 @@ import CourseCard from '../components/CourseCard'
 import Module from '../components/Module'
 import FaqSection from '../components/FaqSection'
 import LandDreamJob from '../components/LandDreamJob'
+import { CoursePage } from '../Data/DataFetcher'
+import TextShimmer from '../shimmer effects/TextShimmer'
 
-var languages =[
+var OfflineLanguages =[
     {
-        language:"HTML",
+        name:"HTML",
         image:"https://cdn-icons-png.flaticon.com/128/1051/1051277.png"
     },
     {
-        language:"CSS",
+        name:"CSS",
         image:"https://cdn-icons-png.flaticon.com/128/732/732190.png"
     },
     {
-        language:"Bootstrap",
+        name:"Bootstrap",
         image:"https://cdn-icons-png.flaticon.com/128/5968/5968672.png"
     },
     {
-        language:"Javascript",
+        name:"Javascript",
         image:"https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
     },
     {
-        language:"ReactJS",
+        name:"ReactJS",
         image:"https://cdn-icons-png.flaticon.com/128/753/753244.png"
     },
     {
-        language:"NodeJS",
+        name:"NodeJS",
         image:"https://cdn-icons-png.flaticon.com/128/5968/5968322.png"
     },
     {
-        language:"ExpressJS",
+        name:"ExpressJS",
         image:"https://cdn-icons-png.flaticon.com/128/91/91397.png"
     },
     {
-        language:"MongoDB",
+        name:"MongoDB",
         image:"https://cdn-icons-png.flaticon.com/128/2906/2906274.png"
     }
 ]
@@ -83,7 +85,51 @@ var card = [
         mode:"Online And Offline"
     }
 ]
+const faqData = [
+    {
+      question: "What courses do you offer?",
+      answer: "We offer a wide range of courses, including web development, data science, and digital marketing.",
+    },
+    {
+      question: "How can I enroll in a course?",
+      answer: "To enroll in a course, simply visit our 'Courses' page and select the course you're interested in. Then, follow the enrollment instructions provided there.",
+    },
+    {
+      question: "Do you offer financial aid or scholarships?",
+      answer: "Yes, we offer financial aid and scholarships to eligible students. Please check our 'Scholarships' page for more information.",
+    },
+  ];
+  const offlineSalaryPackage = {
+    minSalary: "1.5LPA",
+    highestSalary: "1LPA",
+    duration: "1 Months",
+  }
 function Mern() {
+      const [MernData, setMernData] = useState([]);
+       const [PageData, setPageData] = useState([]);
+       useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const data = await CoursePage;
+            setMernData(data);
+          } catch (error) {
+            console.error('Error fetching CoursePage:', error);
+          }
+        };
+    
+        fetchData();
+      }, []);
+      console.log(MernData[0]?.programmingLanguages)
+      const languages = MernData[0]?.programmingLanguages
+      const course = MernData[0]?.course
+      const courseModules = MernData[0]?.courseModules
+      console.log('m', courseModules)
+      const courseDetails = MernData[0]?.courseDetails
+      console.log(courseDetails)
+      const batchStart = MernData[0]?.batchStart
+      const faq = MernData[0]?.faq
+      const courseVideo = MernData[0]?.courseVideo
+      const salaryPackage = MernData[0]?.salaryPackage[0]
   return (
     <section>
     <div className="course-hero container-fluid py-3">
@@ -94,7 +140,7 @@ function Mern() {
                     <p className="heading-subtitle text-white">Learn with Real Work-Ex. Join the best product-based <br /> companies with <span className='text-green fw-bold'>guaranteed placement.</span></p>
                     <div className="batch  d-flex align-items-center"> 
                         <i class="bi bi-calendar3 fs-4 text-green"></i>
-                            <p className='p-dark-small text-green mx-2 mt-2'>New Batch Starts At 20 Sept 2023</p>
+                            <p className='p-dark-small text-green mx-2 mt-2'>New Batch Starts At {batchStart? batchStart: <TextShimmer/>}</p>
                         </div>
                         <div className="course-btn mt-5">
                             <button className="btn-main-outline-light p-4 hero-btn">Enroll This Course <i class="bi bi-chevron-double-right"></i></button>
@@ -110,12 +156,12 @@ function Mern() {
                                         <div className="devider"></div>
                                         <div className="row">
                                             <div className="col-6">
-                                                <small>MIN DREAM JOBS</small>
-                                                <h4 class="heading-small">6-15 LPA</h4>
+                                                <small>MIN DREAM SALARY</small>
+                                                <h4 class="heading-small">{salaryPackage?.minSalary? salaryPackage?.minSalary: offlineSalaryPackage.minSalary}</h4>
                                             </div>
                                             <div className="col-6">
                                                 <small>HIGHEST SALARY</small>
-                                                <h4 className="heading-small">15-40 LPA</h4>
+                                                <h4 className="heading-small">{salaryPackage?.highestSalary? salaryPackage?.highestSalary: offlineSalaryPackage.highestSalary}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +169,7 @@ function Mern() {
                                 <div className="col-12 col-md-4 col-lg-4">
                                     <div className="course-highlight-right bg-light-green rounded-4 p-2 text-center mb-2">
                                     <small>COURSE DURATION</small>
-                                                <p className="heading-small">15-40 LPA</p>
+                                                <p className="heading-small">{salaryPackage?salaryPackage.duration:offlineSalaryPackage.duration}</p>
                                                 <div className="devider"></div>
 
                                                 <small>DEMO CLASSES</small>
@@ -138,7 +184,7 @@ function Mern() {
                 <div className="course-hero-video">
 
                 <div className="video-container">
-                        <img src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                        <img src={courseVideo} alt="" />
                         <div className="play-icon">
                         <i class="bi bi-play-fill fs-4"></i>
                         </div>
@@ -153,21 +199,21 @@ function Mern() {
             <div className="lan-inner-container">
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-7">
-                        <Languages languages={languages}/>
+                        <Languages languages={languages? languages: OfflineLanguages}/>
                     </div>
                     <div className="col-12 col-md-6 col-lg-5">
-                        <CourseCard card={card}/>
+                        <CourseCard card={courseDetails? courseDetails:card}></CourseCard>
                     </div>
                 </div>
             </div>
       </section>
       <LandDreamJob/>
     <Companies/>
-    <Module modules={Mern_module}/>
+    <Module modules={courseModules? courseModules: Mern_module}/>
     <Adwantages/>
     <YoutubeVideos/>
     <Feedback/>
-    <FaqSection/>
+    <FaqSection  faq={faq? faq: faqData}/>
     </section>
   )
 }

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/webinar.css'
 import { Carousel } from 'react-bootstrap';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import AOS from 'aos';
 
 const webinar = [
@@ -67,25 +70,20 @@ function Webinar() {
         window.removeEventListener('resize', handleResize);
       };
     }, []);
-  
-    const handleCarouselHover = () => {
-      // Pause the Carousel when the user hovers over it
-      setCarouselPaused(true);
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: itemsPerSlide,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000, // Change delay as needed
+      prevArrow: <button className="slick-prev">Previous</button>, // Add previous arrow
+      nextArrow: <button className="slick-next">Next</button>, // Add next arrow
     };
   
-    const handleCarouselLeave = () => {
-      // Resume the Carousel when the user stops hovering
-      setCarouselPaused(false);
-    };
   
 
-  const carouselItems = webinar.reduce((accumulator, current, index) => {
-    if (index % itemsPerSlide === 0) {
-      accumulator.push([]);
-    }
-    accumulator[accumulator.length - 1].push(current);
-    return accumulator;
-  }, []);
 
 
   function ReadMore({ text, maxLength }) {
@@ -122,21 +120,11 @@ function Webinar() {
   <>
           <h3 className="banner-heading mt-5" data-aos="fade-up">Pre Career Guidence program <span className="main-text" > <br /> From Top MNC's</span></h3>
     <section className='p-2 container py-5' id="webinar">
-
-      <div className="students-placed">
-      <Carousel
-      interval={carouselInterval}
-      >
-      {carouselItems.map((slideItems, index) => (
-        <Carousel.Item key={index}
-          onMouseEnter={handleCarouselHover}
-          onMouseLeave={handleCarouselLeave}
-        >
-          <div className="d-flex flex-wrap container-fluid">
+    <div className="container-fluid">
           <div className="row w-100 d-flex justify-conent-center">
-
-            {slideItems.map((item) => (
-                <div className="col-12 col-md-6 col-lg-4">
+          <Slider {...settings}>
+          {webinar.map((item) => (
+                <div className="col-12 col-md-6 col-lg-4 p-2">
               <div className="webinar-card bg-v5-green-700" data-aos="zoom-in-left">
                 <div className="webinar-card-header p-2">
                         <img src={item.image} alt="" />
@@ -149,18 +137,10 @@ function Webinar() {
               </div>
                 </div>
             ))}
+            </Slider>
+           
               </div>
           </div>
-        </Carousel.Item>
-      ))}
-    </Carousel>
-    <div className="custom-indicators">
-        </div>
-      </div>
-      <div className="text-center py-5">
-        <button className="btn-main-outline-light m-1">Explore Events<i class="bi bi-chevron-double-right"></i></button>
-        <button className="btn-main m-1">Book Master Classes<i class="bi bi-chevron-double-right"></i></button>
-      </div>
     </section>
   </>
   )

@@ -36,7 +36,7 @@ function HeroRegister() {
       })
       .catch((error) => {
         console.error('Registration error:', error);
-        setMessage('Registration error:', error)
+        setMessage(`Registration error: ${error}` )
         setError(true)
           setShowSuccessDialog(true);
       })

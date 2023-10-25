@@ -30,7 +30,7 @@ const Module = (props) => {
             <span className="count p-2 px-3 rounded-5  text-white">
         {index+1}
             </span>
-            <span className="faq-question-text text-white"><span className="fw-bold  mx-2 text-light-green"> Module{index + 1}:</span> {item.module}</span>
+            <span className="faq-question-text text-white"><span className="fw-bold  mx-2 text-light-green"> Module{index + 1}:</span> {item.title}</span>
             <div className="faq-icon">
               {activeIndex === index ? <i class="bi bi-caret-up-fill"></i>:<i class="bi bi-caret-down-fill"></i>}
             </div>
@@ -40,7 +40,7 @@ const Module = (props) => {
                 <h5 className='mt-4 text-light-green'>About</h5>
                 {item.about}
                 <h5 className='mt-4 text-light-green'>Topics Covered</h5>
-                <p>{item.description}</p>
+                <p>{item.topics}</p>
             </div>
           )}
         </div>

@@ -69,7 +69,7 @@ function Training() {
                                 </div>
                                 <div className="col-lg-12 col-md-12 col-sm-10 col-10">
                                 <div className="card-body">
-                                <h4 className='card-heading text-900'>{item.heading}</h4>
+                                <h4 className='card-heading text-900'>{item.title}</h4>
                                 <p className='p-light-small text-black'>{item.description}</p>
                                 </div>
                                 </div>

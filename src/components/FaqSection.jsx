@@ -2,23 +2,8 @@ import React, { useState } from 'react';
 import '../styles/faq.css'
 import BookDemoBtn from '../Extra/BookDemoBtn';
 
-const FaqSection = () => {
+const FaqSection = ({faq}) => {
   const [activeIndex, setActiveIndex] = useState(null);
-
-  const faqData = [
-    {
-      question: "What courses do you offer?",
-      answer: "We offer a wide range of courses, including web development, data science, and digital marketing.",
-    },
-    {
-      question: "How can I enroll in a course?",
-      answer: "To enroll in a course, simply visit our 'Courses' page and select the course you're interested in. Then, follow the enrollment instructions provided there.",
-    },
-    {
-      question: "Do you offer financial aid or scholarships?",
-      answer: "Yes, we offer financial aid and scholarships to eligible students. Please check our 'Scholarships' page for more information.",
-    },
-  ];
 
   const handleAccordionClick = (index) => {
     if (activeIndex === index) {
@@ -29,10 +14,10 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="container-fluid bg-light py-2">
+    <div className="container-fluid py-2 bg-light">
       <h2 className='banner-heading'>Frequently Asked Questions</h2>
-      <div className="accordion container" id="faqAccordion">
-        {faqData.map((faq, index) => (
+      <div className="accordion container " id="faqAccordion">
+        {faq.map((faq, index) => (
           <div className="card course-faq" key={index}>
             <div className="course-faq-question" id={`heading${index}`}>
               <h4 className="mb-0">

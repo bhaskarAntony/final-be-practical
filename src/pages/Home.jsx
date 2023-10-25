@@ -13,9 +13,9 @@ import Skills from '../components/Skills';
 import StudentsPlaced from '../components/StudentsPlaced';
 import Courses from '../components/Courses';
 import QuizModal from '../components/QuizModal';
-import Batchtable from '../components/Batchtable';
 import EliteProgram from '../components/EliteProgram';
 import Elite from '../components/Elite';
+import AllCourses from '../components/AllCourses';
 
 function Home() {
       // Model open logic
@@ -36,14 +36,13 @@ function Home() {
         <HomeHero/>
         {/* <Stories/> */}
        <div className="spacer mt-5">
-       <Courses/>
+      <AllCourses/>
        </div>
+       <Skills/>
        <Elite/>
        <EliteProgram/>
-       <Skills/>
         <Training/>
         <Companies/>
-        <Batchtable/>
         <Webinar/>
         <QuizModal/>
         <Adwantages/>

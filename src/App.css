@@ -20,11 +20,12 @@
   --green-main-color: #018060!important;
   --yellow-color:#ffd500;
   --dark-green: rgb(2, 38, 40)!important;
-  --hero-dark-green:#063435!important;
+  --hero-dark-green:#044445!important;
   --bg-v5-green:rgb(0 66 70/1)!important;
   --gold:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
   radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
+
 
 .bg-v5-green-700 {
   /* --tw-bg-opacity: 1 !important; */
@@ -49,10 +50,13 @@
   background: var(--dark-green) !important;
 }
 .bg-main-green{
-  background-color: var(--green-main-color);
+  background-color: var(--green-main-color) !important;
 }
 .bg-v5-green-500 {
   background-color: rgb(0 66 70/1)!important;
+}
+.bg-gold{
+  background: var(--gold);
 }
 
 
@@ -72,8 +76,10 @@
 /* all text styles  */
 .heading{
     font-size: 3.5rem;
-    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+    letter-spacing: 1.3px;
     color: rgb(0 0 0/var(--tw-text-opacity))!important;
+    /* text-shadow:2px 2px 2px #000, 1px 5px 5px #000; */
 }
 .course-heading{
   font-size: 2.5rem;
@@ -146,6 +152,13 @@
     white-space: nowrap;
     font-weight: 600;
     text-transform: capitalize;
+}
+.form-control{
+  background-color: #faf6f6 !important;
+  border-radius: 5px !important ;
+}
+.btn-100{
+  min-width: 100% !important;
 }
 .btn-main:hover{
   /* transform: scale(0.9) !important; */
@@ -261,24 +274,7 @@ font-size: 1.5rem;
     background-color: #ebff12; /* Change the color to your desired color */
     transition: width 0.3s ease-in-out;
   }
-  .carousel-indicators [data-bs-target]{
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #000000 I !important;
-    background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: 0.5;
-    transition: opacity 0.6s ease;
-  }
+
 
   /* loader  */
   .loading-spinner-overlay {
@@ -313,3 +309,72 @@ font-size: 1.5rem;
     background: url('./images/Eat-loading.svg') no-repeat center;
     background-size: cover;
   }
+
+
+
+  /* Add this CSS code to your 'homehero.css' or your preferred stylesheet */
+
+/* Carousel styling */
+.custom-carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.custom-control-container {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.custom-control-prev,
+.custom-control-next {
+  background: rgba(3, 112, 112, 0.6); /* Background color for previous and next buttons */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-control-prev:hover,
+.custom-control-next:hover {
+  background: rgba(0, 0, 0, 0.8); /* Background color on hover */
+}
+
+/* Adjust icon size as needed */
+.custom-control-prev svg,
+.custom-control-next svg {
+  font-size: 5rem !important;
+}
+
+/* Indicators styling (dots at the bottom) */
+.custom-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background: #ddd; /* Inactive indicator color */
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.indicator.active {
+  background: #333; /* Active indicator color */
+}
+
+/* Other carousel styles as needed */
+/* ... */
+.carousel-indicators{
+  display: none !important;
+}

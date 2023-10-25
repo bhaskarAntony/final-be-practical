@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/elite-page.css'
 import Elite from '../components/Elite'
+import Batchtable from '../components/Batchtable'
+import EliteProgram from '../components/EliteProgram'
 
 const eliteCourses =[
     {
@@ -86,6 +88,9 @@ function ElitePage() {
         </div>
     </div>
     <div className="container elite-devider"></div>
+    <Batchtable/>
+    <div className="container elite-devider"></div>
+    <EliteProgram/>
     <div className="elite-course container-fluid">
         <div className="roW">
             {

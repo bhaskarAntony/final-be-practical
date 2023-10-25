@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/header.css'
+import { Link } from 'react-router-dom';
+import { CoursePage } from '../Data/DataFetcher';
 
 function Header() {
+  const [loading, setLoading] = useState(false)
+  const [CourseData, setCourseData] = useState([]);
+  useEffect(() => {
+   const fetchData = async () => {
+     try {
+       const data = await CoursePage;
+       setLoading(false)
+       setCourseData(data);
+       console.log("data", data)
+     } catch (error) {
+      setLoading(true)
+       console.error('Error fetching CoursePage:', error);
+     }
+   };
+
+   fetchData();
+ }, []);
   return (
     <header>
       <div className="nav-top">
@@ -25,20 +44,14 @@ function Header() {
             Courses <i class="bi bi-chevron-down mx-1"></i>
           </a>
           <ul class="dropdown-menu">
-          <li class="nav-item dropend list-group-item">
-              <a class="nav-link dropdown-toggle dropdown-item" href="/course-fullstack" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                FullStack Devolopment
-              </a>
-              <ul class="dropdown-menu list-group">
-                <li className='list-group-item'><a class="dropdown-item" href="/course-mern">MERN Fullstack Devolopment</a></li>
-                <li className='list-group-item'><a class="dropdown-item" href="/course-python">Python Fullstack Devolopment</a></li>
-                <li className='list-group-item'><a class="dropdown-item" href="/course-java">Java Fullstack Devolopment</a></li>
-              </ul>
+
+           {
+            CourseData.map(item=>(
+            <li className="list-group-item">
+                <Link to={`/course/${item.courseName}/${item._id}`} className="dropdown-item">{item.courseName}</Link>
             </li>
-            <li className='list-group-item'><a class="dropdown-item" href="/course-data-science">Data Science</a></li>
-            <li className='list-group-item'><a class="dropdown-item" href="/course-cloud-computing">Cloud Computing</a></li>     
-            <li className='list-group-item'><a class="dropdown-item" href="/course-digital-marketing">Digital Marketing</a></li>   
-            <li className='list-group-item'><a class="dropdown-item" href="#">Job Oriented Courses</a></li>   
+            ))
+           }
           </ul>
         </li>
         <li class="nav-item dropdown">
